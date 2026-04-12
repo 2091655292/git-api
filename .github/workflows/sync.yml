@@ -1,13 +1,12 @@
-# .github/workflows/sync.yml
-name: Multi-Source Sync & Purge CDN
+name: Multi-Source Sync Test
 
 permissions:
   contents: write
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # 手动触发
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *' # 每天 UTC 00:00 (北京时间 08:00) 自动执行
 
 jobs:
   sync_multi_sources:
@@ -16,22 +15,16 @@ jobs:
       - name: Checkout target repo
         uses: actions/checkout@v4
 
-      - name: Setup environment
-        run: |
-          sudo apt-get update && sudo apt-get install -y rsync jq
-          pip install tccli
-
-      - name: Configure TencentCloud CLI
-        if: ${{ env.EDGEONE_ZONE_ID != '' && secrets.TENCENT_SECRET_ID != '' }}
-        run: |
-          tccli configure set secretId ${{ secrets.TENCENT_SECRET_ID }}
-          tccli configure set secretKey ${{ secrets.TENCENT_SECRET_KEY }}
-          tccli configure set region ap-guangzhou
-
       - name: Sync Multiple Sources
         run: |
           # ==========================================================
-          # 【多任务配置区域】⚠️ 请勿手动修改格式，供 append-sync-config.yml 解析
+          # 【多任务配置区域】
+          # 支持添加多个任务，从不同仓库拉取不同文件/文件夹
+          # source_repo: 源仓库 (格式: 用户名/仓库名)
+          # source_branch: 分支 (默认 main)
+          # source_path: 源路径 (文件夹或文件)
+          # dest_path: 目标路径 (你仓库里的路径)
+          # ==========================================================
           # === SYNC_CONFIG_START ===
           SYNC_TASKS='[
             {
@@ -44,13 +37,13 @@ jobs:
           # === SYNC_CONFIG_END ===
           # ==========================================================
 
-          # 配置 Git（✅ 修复：去掉字符串末尾空格）
+          # 配置 Git
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           # 解析 JSON 并循环处理每个任务
           echo "$SYNC_TASKS" | jq -c '.[]' | while read -r task; do
-            # 读取配置（✅ 修复：jq key 去掉末尾空格）
+            # 读取配置
             SRC_REPO=$(echo "$task" | jq -r '.source_repo')
             SRC_BRANCH=$(echo "$task" | jq -r '.source_branch')
             SRC_PATH=$(echo "$task" | jq -r '.source_path')
@@ -61,87 +54,61 @@ jobs:
             echo "  源: $SRC_REPO ($SRC_BRANCH) -> $SRC_PATH"
             echo "  目标: $DEST_PATH"
             
-            # 生成唯一临时目录（✅ 修复：= 后面不能有空格）
+            # 生成唯一临时目录
             TEMP_DIR="/tmp/sync_$(echo "$SRC_REPO" | md5sum | head -c 10)"
             
             # 克隆源仓库 (稀疏检出)
             rm -rf "$TEMP_DIR"
             git clone --depth 1 --branch "$SRC_BRANCH" --filter=blob:none --sparse "https://github.com/$SRC_REPO" "$TEMP_DIR"
             
-            # 设置稀疏检出路径
+            # 设置稀疏检出路径 (支持单文件)
             pushd "$TEMP_DIR" > /dev/null
             git sparse-checkout set --no-cone "$SRC_PATH"
             popd > /dev/null
             
-            # 检查源文件是否存在
+            # ==========================================
+            # 【健壮性修复】检查源文件是否存在
+            # ==========================================
             if [ ! -e "$TEMP_DIR/$SRC_PATH" ]; then
-              echo "::error:: ❌ 错误：源路径 '$SRC_PATH' 不存在"
+              echo "::error:: ❌ 错误：在源仓库中未找到路径 '$SRC_PATH'。请检查配置中的 source_path 是否正确（注意大小写和后缀名）。"
               exit 1
             fi
 
             # 准备目标目录
             mkdir -p "$DEST_PATH"
             
-            # 同步逻辑
+            # 同步文件逻辑
             if [ -d "$TEMP_DIR/$SRC_PATH" ]; then
-              echo "  类型: 文件夹同步"
-              rsync -av --delete "$TEMP_DIR/$SRC_PATH/" "$DEST_PATH/"
+                 # 如果是文件夹
+                 echo "  类型: 文件夹同步"
+                 rsync -av --delete "$TEMP_DIR/$SRC_PATH/" "$DEST_PATH/"
             else
-              echo "  类型: 单文件同步"
-              PARENT_DIR=$(dirname "$DEST_PATH")
-              mkdir -p "$PARENT_DIR"
-              rsync -av --delete "$TEMP_DIR/$SRC_PATH" "$DEST_PATH"
+                 # 如果是单文件
+                 echo "  类型: 单文件同步"
+                 PARENT_DIR=$(dirname "$DEST_PATH")
+                 mkdir -p "$PARENT_DIR"
+                 rsync -av --delete "$TEMP_DIR/$SRC_PATH" "$DEST_PATH"
             fi
             
-            # 清理
+            # 清理临时目录
             rm -rf "$TEMP_DIR"
           done
 
           echo "------------------------------------------------"
           echo "▶ 检查并提交变更..."
           
-          # 只 add 配置中指定的路径
+          # 只 add 配置中指定的目标路径
           echo "$SYNC_TASKS" | jq -r '.[].dest_path' | while read -r path; do
-            if [ -f "$path" ] || [ -d "$path" ]; then
-              git add "$path"
-            fi
+             if [ -f "$path" ] || [ -d "$path" ]; then
+                git add "$path"
+             fi
           done
 
           if ! git diff --cached --quiet; then
-            echo "💾 发现变更，提交中..."
-            git commit -m "chore: sync updates from upstream sources"
-            git push
-            echo "✅ 同步完成"
+             echo "💾 发现变更，正在提交..."
+             git commit -m "chore: sync updates from upstream sources"
+             git push
+             echo "✅ 同步完成并已推送。"
           else
-            echo "✅ 无变更，跳过提交"
-          fi
-
-      - name: Purge EdgeOne CDN Cache
-        if: success() && env.EDGEONE_ZONE_ID != '' && secrets.TENCENT_SECRET_ID != ''
-        run: |
-          echo "🧹 清除 EdgeOne CDN 缓存..."
-          
-          # 读取配置（支持 secrets/vars 覆盖）
-          ZONE_ID="${{ secrets.EDGEONE_ZONE_ID }}"
-          PURGE_TYPE="${{ vars.EDGEONE_PURGE_TYPE || 'purge_prefix' }}"
-          PURGE_TARGETS="${{ secrets.EDGEONE_PURGE_TARGETS || '[\"https://your-domain.com/\"]' }}"
-          PURGE_METHOD="${{ vars.EDGEONE_PURGE_METHOD || 'delete' }}"
-          
-          if [ -z "$ZONE_ID" ]; then
-            echo "⚠️ 未配置 EDGEONE_ZONE_ID，跳过"
-            exit 0
-          fi
-          
-          RESPONSE=$(tccli teo CreatePurgeTask \
-            --ZoneId "$ZONE_ID" \
-            --Type "$PURGE_TYPE" \
-            --Targets "$PURGE_TARGETS" \
-            --Method "$PURGE_METHOD" \
-            --cli-unfold-argument 2>&1)
-          
-          if echo "$RESPONSE" | jq -e '.TaskId' > /dev/null 2>&1; then
-            TASK_ID=$(echo "$RESPONSE" | jq -r '.TaskId')
-            echo "✅ CDN 刷新成功！TaskId: $TASK_ID"
-          else
-            echo "⚠️ CDN 刷新响应: $RESPONSE"
+             echo "✅ 所有文件均无变化，无需提交。"
           fi
