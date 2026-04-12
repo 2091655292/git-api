@@ -1,156 +1,147 @@
 # .github/workflows/sync.yml
-# 功能：多源仓库文件同步 + EdgeOne CDN 缓存自动刷新
-# ⚠️ 注意：SYNC_TASKS 区域被标记包裹，请勿手动修改该区域内容，使用 append-sync-config.yml 工作流追加任务喵～
-name: Sync & Purge EdgeOne CDN
+name: Multi-Source Sync & Purge CDN
+
+permissions:
+  contents: write
 
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
 
-env:
-  # ========== 🔒 SYNC_TASKS 配置区域（由 append-sync-config.yml 自动管理）==========
-  # === SYNC_CONFIG_START ===
-  SYNC_TASKS='[
-  {
-    "source_repo": "lingeringsound/adblock_auto",
-    "source_branch": "main",
-    "source_path": "Rules",
-    "dest_path": "adblock_auto/Rules"
-  }
-]'
-  # === SYNC_CONFIG_END ===
-  # ========== 🔓 其他可自由修改的配置 ==========
-
-  # EdgeOne CDN 配置（支持 secrets/vars 覆盖）
-  EDGEONE_ZONE_ID: ${{ secrets.EDGEONE_ZONE_ID }}
-  EDGEONE_PURGE_TYPE: ${{ vars.EDGEONE_PURGE_TYPE || 'purge_prefix' }}
-  EDGEONE_PURGE_TARGETS: ${{ secrets.EDGEONE_PURGE_TARGETS || '["https://your-domain.com/"]' }}
-  EDGEONE_PURGE_METHOD: ${{ vars.EDGEONE_PURGE_METHOD || 'delete' }}
-
-  # Git 提交配置
-  GIT_USER_NAME: "github-actions[bot]"
-  GIT_USER_EMAIL: "github-actions[bot]@users.noreply.github.com"
-  COMMIT_MESSAGE: "chore: auto sync & purge cdn"
-
 jobs:
-  sync-and-purge:
+  sync_multi_sources:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: Checkout repository
+      - name: Checkout target repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup environment
         run: |
           sudo apt-get update && sudo apt-get install -y rsync jq
-          pip install --upgrade pip
           pip install tccli
 
       - name: Configure TencentCloud CLI
+        if: ${{ env.EDGEONE_ZONE_ID != '' && secrets.TENCENT_SECRET_ID != '' }}
         run: |
           tccli configure set secretId ${{ secrets.TENCENT_SECRET_ID }}
           tccli configure set secretKey ${{ secrets.TENCENT_SECRET_KEY }}
           tccli configure set region ap-guangzhou
-          tccli configure set output json
 
-      # 🔥 核心同步逻辑（读取标记区域内的 SYNC_TASKS）
-      - name: Run sync tasks
-        id: sync
+      - name: Sync Multiple Sources
         run: |
-          echo "🔄 开始执行同步任务..."
-          
-          # 解析任务列表（自动读取标记区域内的配置）
-          SYNC_TASKS='${{ env.SYNC_TASKS }}'
-          TASK_COUNT=$(echo "$SYNC_TASKS" | jq 'length')
-          echo "📋 共 $TASK_COUNT 个同步任务"
-          
-          for i in $(seq 0 $((TASK_COUNT - 1))); do
-            echo "▶️ 执行任务 #$((i+1))"
+          # ==========================================================
+          # 【多任务配置区域】⚠️ 请勿手动修改格式，供 append-sync-config.yml 解析
+          # === SYNC_CONFIG_START ===
+          SYNC_TASKS='[
+            {
+              "source_repo": "lingeringsound/adblock_auto",
+              "source_branch": "main",
+              "source_path": "Rules",
+              "dest_path": "adblock_auto/Rules"
+            }
+          ]'
+          # === SYNC_CONFIG_END ===
+          # ==========================================================
+
+          # 配置 Git（✅ 修复：去掉字符串末尾空格）
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 解析 JSON 并循环处理每个任务
+          echo "$SYNC_TASKS" | jq -c '.[]' | while read -r task; do
+            # 读取配置（✅ 修复：jq key 去掉末尾空格）
+            SRC_REPO=$(echo "$task" | jq -r '.source_repo')
+            SRC_BRANCH=$(echo "$task" | jq -r '.source_branch')
+            SRC_PATH=$(echo "$task" | jq -r '.source_path')
+            DEST_PATH=$(echo "$task" | jq -r '.dest_path')
             
-            SOURCE_REPO=$(echo "$SYNC_TASKS" | jq -r ".[$i].source_repo")
-            SOURCE_BRANCH=$(echo "$SYNC_TASKS" | jq -r ".[$i].source_branch")
-            SOURCE_PATH=$(echo "$SYNC_TASKS" | jq -r ".[$i].source_path")
-            DEST_PATH=$(echo "$SYNC_TASKS" | jq -r ".[$i].dest_path")
+            echo "------------------------------------------------"
+            echo "▶ 开始同步任务:"
+            echo "  源: $SRC_REPO ($SRC_BRANCH) -> $SRC_PATH"
+            echo "  目标: $DEST_PATH"
             
-            echo "   📦 源: $SOURCE_REPO#$SOURCE_BRANCH/$SOURCE_PATH"
-            echo "   📁 目标: $DEST_PATH"
+            # 生成唯一临时目录（✅ 修复：= 后面不能有空格）
+            TEMP_DIR="/tmp/sync_$(echo "$SRC_REPO" | md5sum | head -c 10)"
             
-            TEMP_DIR=$(mktemp -d)
-            cd "$TEMP_DIR"
+            # 克隆源仓库 (稀疏检出)
+            rm -rf "$TEMP_DIR"
+            git clone --depth 1 --branch "$SRC_BRANCH" --filter=blob:none --sparse "https://github.com/$SRC_REPO" "$TEMP_DIR"
             
-            git init
-            git remote add origin "https://github.com/$SOURCE_REPO.git"
-            git config core.sparseCheckout true
-            echo "$SOURCE_PATH" >> .git/info/sparse-checkout
-            git pull --depth=1 origin "$SOURCE_BRANCH"
+            # 设置稀疏检出路径
+            pushd "$TEMP_DIR" > /dev/null
+            git sparse-checkout set --no-cone "$SRC_PATH"
+            popd > /dev/null
             
-            if [ ! -e "$SOURCE_PATH" ]; then
-              echo "❌ 源路径不存在: $SOURCE_PATH，跳过"
-              cd - > /dev/null && rm -rf "$TEMP_DIR"
-              continue
+            # 检查源文件是否存在
+            if [ ! -e "$TEMP_DIR/$SRC_PATH" ]; then
+              echo "::error:: ❌ 错误：源路径 '$SRC_PATH' 不存在"
+              exit 1
             fi
+
+            # 准备目标目录
+            mkdir -p "$DEST_PATH"
             
-            mkdir -p "$GITHUB_WORKSPACE/$DEST_PATH"
-            if [ -d "$SOURCE_PATH" ]; then
-              rsync -av --delete "$SOURCE_PATH"/ "$GITHUB_WORKSPACE/$DEST_PATH"/
+            # 同步逻辑
+            if [ -d "$TEMP_DIR/$SRC_PATH" ]; then
+              echo "  类型: 文件夹同步"
+              rsync -av --delete "$TEMP_DIR/$SRC_PATH/" "$DEST_PATH/"
             else
-              rsync -av "$SOURCE_PATH" "$GITHUB_WORKSPACE/$DEST_PATH"
+              echo "  类型: 单文件同步"
+              PARENT_DIR=$(dirname "$DEST_PATH")
+              mkdir -p "$PARENT_DIR"
+              rsync -av --delete "$TEMP_DIR/$SRC_PATH" "$DEST_PATH"
             fi
             
-            cd - > /dev/null && rm -rf "$TEMP_DIR"
-            echo "✅ 任务 #$((i+1)) 完成"
+            # 清理
+            rm -rf "$TEMP_DIR"
           done
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "${{ env.GIT_USER_NAME }}"
-          git config --global user.email "${{ env.GIT_USER_EMAIL }}"
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "📝 检测到变更，提交中..."
-            git add .
-            git commit -m "${{ env.COMMIT_MESSAGE }} [$(date '+%Y-%m-%d %H:%M:%S')]"
+          echo "------------------------------------------------"
+          echo "▶ 检查并提交变更..."
+          
+          # 只 add 配置中指定的路径
+          echo "$SYNC_TASKS" | jq -r '.[].dest_path' | while read -r path; do
+            if [ -f "$path" ] || [ -d "$path" ]; then
+              git add "$path"
+            fi
+          done
+
+          if ! git diff --cached --quiet; then
+            echo "💾 发现变更，提交中..."
+            git commit -m "chore: sync updates from upstream sources"
             git push
-            echo "✅ 推送成功"
+            echo "✅ 同步完成"
           else
-            echo "✨ 无变更，跳过提交"
+            echo "✅ 无变更，跳过提交"
           fi
 
       - name: Purge EdgeOne CDN Cache
-        if: success()
+        if: success() && env.EDGEONE_ZONE_ID != '' && secrets.TENCENT_SECRET_ID != ''
         run: |
-          echo "🧹 开始清除 EdgeOne CDN 缓存..."
+          echo "🧹 清除 EdgeOne CDN 缓存..."
           
-          if [ -z "$EDGEONE_ZONE_ID" ]; then
+          # 读取配置（支持 secrets/vars 覆盖）
+          ZONE_ID="${{ secrets.EDGEONE_ZONE_ID }}"
+          PURGE_TYPE="${{ vars.EDGEONE_PURGE_TYPE || 'purge_prefix' }}"
+          PURGE_TARGETS="${{ secrets.EDGEONE_PURGE_TARGETS || '[\"https://your-domain.com/\"]' }}"
+          PURGE_METHOD="${{ vars.EDGEONE_PURGE_METHOD || 'delete' }}"
+          
+          if [ -z "$ZONE_ID" ]; then
             echo "⚠️ 未配置 EDGEONE_ZONE_ID，跳过"
             exit 0
           fi
-          if [ -z "${{ secrets.TENCENT_SECRET_ID }}" ]; then
-            echo "⚠️ 未配置腾讯云密钥，跳过"
-            exit 0
-          fi
-          
-          echo "🎯 类型: $EDGEONE_PURGE_TYPE | 目标: $EDGEONE_PURGE_TARGETS"
           
           RESPONSE=$(tccli teo CreatePurgeTask \
-            --ZoneId "$EDGEONE_ZONE_ID" \
-            --Type "$EDGEONE_PURGE_TYPE" \
-            --Targets "$EDGEONE_PURGE_TARGETS" \
-            --Method "${{ env.EDGEONE_PURGE_METHOD }}" \
+            --ZoneId "$ZONE_ID" \
+            --Type "$PURGE_TYPE" \
+            --Targets "$PURGE_TARGETS" \
+            --Method "$PURGE_METHOD" \
             --cli-unfold-argument 2>&1)
           
           if echo "$RESPONSE" | jq -e '.TaskId' > /dev/null 2>&1; then
             TASK_ID=$(echo "$RESPONSE" | jq -r '.TaskId')
-            echo "✅ CDN 刷新任务提交成功！TaskId: $TASK_ID"
+            echo "✅ CDN 刷新成功！TaskId: $TASK_ID"
           else
-            echo "❌ 刷新失败: $RESPONSE"
-            exit 1
+            echo "⚠️ CDN 刷新响应: $RESPONSE"
           fi
-
-      - name: Execution Summary
-        if: always()
-        run: |
-          echo "🏁 执行完成 | 同步: ${{ steps.sync.outcome }} | 时间: $(date '+%Y-%m-%d %H:%M:%S %Z')"
