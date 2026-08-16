@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
-! Checksum: B5AUT5jLRGf6B4xMKG0i5A
-! Title: 混合规则精简版(更新日期2026-08-15 01:12:03)
-! Version: 20260815011203
+! Checksum: Miy6yGyni23dMeme2+UoKw
+! Title: 混合规则精简版(更新日期2026-08-16 00:42:08)
+! Version: 20260816004208
 ! Expires: 12 hours (update frequency)
-! Last modified: 2026-08-15 01:12:03
-! Total Count: 65950
-! Blocked Filters: 65950
+! Last modified: 2026-08-16 00:42:08
+! Total Count: 66095
+! Blocked Filters: 66095
 ! Description: 合并于各种知名的Adblock规则，适用于移动端轻量的浏览器，例如 VIA / Rian / B仔浏览器
 ! Homepage: https://lingeringsound.github.io/adblock_auto
 ! GitHub Homepage: https://github.com/lingeringsound/adblock_auto
@@ -255,6 +255,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 .bbelements.com^
 .be/ads/
 .bid/ads/
+.biz/?re=$third-party
 .biz/?te=$third-party
 .biz/ad.
 .biz/ad/
@@ -2367,7 +2368,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 /bannerpop/uploads/*
 /banners*swf
 /banners.cgi?$~xmlhttprequest
-/banners/*$domain=biertijd.com|biertijd.xxx|waskucity.com
+/banners/*$domain=2ip.io|2ip.ru|biertijd.com|biertijd.xxx|waskucity.com
 /banners/468$image
 /banners/728$image
 /banners/ads-$~xmlhttprequest
@@ -4092,7 +4093,6 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 /wp-content/plugins/popad/*
 /wp-content/plugins/popupbuilder-adblock/*
 /wp-content/plugins/script-manager/assets/js/script-manager.js$domain=hentaihaven.xxx|watchhentai.xxx
-/wp-content/plugins/script-manager/assets/js/script-manager.js?
 /wp-content/plugins/the-moneytizer/*
 /wp-content/plugins/upprev/*
 /wp-content/plugins/useful-banner-manager/*
@@ -4489,7 +4489,7 @@ $websocket,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube
 ://ad-api-
 ://ad.hdys*.com
 ://ad1.
-://ads.$~image,~xmlhttprequest,domain=~abendblatt.de|~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.axon.ai|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.chewy.com|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.ferrarichat.com|~ads.finance|~ads.flytant.com|~ads.fund|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolibre.com.ar|~ads.mercadolibre.com.cl|~ads.mercadolibre.com.co|~ads.mercadolibre.com.ec|~ads.mercadolibre.com.mx|~ads.mercadolibre.com.pe|~ads.mercadolibre.com.ve|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.misskey.io|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.naver.com|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.openai.com|~ads.palmettostatearmory.com|~ads.pandauth.com|~ads.pinterest.com|~ads.privacy.qq.com|~ads.realizeperformance.com|~ads.remix.es|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.siriusxmmedia.com|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.sociogram.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.tuver.ru|~ads.twitter.com|~ads.typepad.jp|~ads.umd.edu|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.vk.ru|~ads.watson.ch|~ads.wildberries.ru|~ads.woori.team|~ads.x.com|~ads.yandex|~cremonaoggi.it|~reempresa.org
+://ads.$~image,~xmlhttprequest,domain=~abendblatt.de|~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.axon.ai|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.chewy.com|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.ferrarichat.com|~ads.finance|~ads.flytant.com|~ads.fund|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mark8iq.io|~ads.mercadolibre.com.ar|~ads.mercadolibre.com.cl|~ads.mercadolibre.com.co|~ads.mercadolibre.com.ec|~ads.mercadolibre.com.mx|~ads.mercadolibre.com.pe|~ads.mercadolibre.com.ve|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.misskey.io|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.naver.com|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.openai.com|~ads.palmettostatearmory.com|~ads.pandauth.com|~ads.pinterest.com|~ads.privacy.qq.com|~ads.realizeperformance.com|~ads.remix.es|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.siriusxmmedia.com|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.sociogram.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.tuver.ru|~ads.twitter.com|~ads.typepad.jp|~ads.umd.edu|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.vk.ru|~ads.watson.ch|~ads.wildberries.ru|~ads.woori.team|~ads.x.com|~ads.yandex|~cremonaoggi.it|~reempresa.org
 ://ads2.
 ://adsbb.
 ://adserving.
@@ -4954,7 +4954,7 @@ xn--*.*/ins/js/*16$third-party,script
 zhaotianbao1.cn/*/ywy*.apk$~third-party
 !<<<<<通配符规则 结束>>>>>
 
-!<<<<<域名规则>>>>>41140
+!<<<<<域名规则>>>>>41285
 |https://m.frgls.com/js/*.js?v=
 ||*.libaishuo.com^$third-party
 ||*ggua.xyz^$third-party
@@ -5014,7 +5014,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||0722fc.com/index/tools/js.php
 ||073img.com/*/|
 ||0755rc.com^$third-party
-||077ef2133b.com^
 ||078pwrxpbg.com^
 ||07c225f3.online^
 ||07pv7k61z.com^
@@ -5038,6 +5037,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||0e7mnbmbb.com^
 ||0e9knynfb.com^
 ||0eab70c429.a567dda4c2.com^
+||0elq99i0w.com^
 ||0emn.com^
 ||0etmx4b4o.com^
 ||0fa43ea1de.com^
@@ -5544,6 +5544,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||1ts07.top^
 ||1ts17.top^
 ||1ts19.top^
+||1ts24.top^
 ||1tvg524vih.com^
 ||1u6hvoykk3.com^
 ||1ub29e88i.com^
@@ -5832,6 +5833,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||2fgrrc9t0.de^
 ||2fhn1qmca.com^
 ||2fjxw3dyip.com^
+||2fnptjci.de^
 ||2g1lbrr0qv.com^
 ||2g8lomzrb.com^
 ||2gnc.com^
@@ -5855,6 +5857,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||2leb5tv74io42gcvkv2w6c.rest^
 ||2linkpath.com^
 ||2lj9n8sz0w.com^
+||2lpwji3xr.com^
 ||2mdn-cn.net^
 ||2mdn.net^$~media,third-party
 ||2mf9kkbhab31.com^
@@ -5874,6 +5877,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||2qj7mq3w4uxe.com^
 ||2r1jqii2c.com^
 ||2r2zhs64a7.com^
+||2rlgdkf7s.de^
 ||2rmifan7n.de^
 ||2s5rm8cz8p.com^
 ||2smarttracker.com^
@@ -5957,6 +5961,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||33apk.com^
 ||33dav.com/static/js/banner.js
 ||33dav.com/static/js/bottom.js
+||33e4ko95j4xr967n86.cfd^
 ||33img.com^$domain=18board.com|18p2p.com
 ||33kw1wc58.top^
 ||33mp2fbrns.com^
@@ -6081,6 +6086,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||3f55bdb730.com^
 ||3f6e7oacgi.com^
 ||3f8b0b3559.com^
+||3fabf0ce4f.com^
 ||3g.cn/baidualading/
 ||3g.cn/index.php?s=Index/adv&
 ||3g.qq.com/lview?
@@ -6118,6 +6124,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||3mads.com^
 ||3myad.com^
 ||3nbf4.com^
+||3no7yp5oj4cnycftwyy9hn17.rest^
 ||3nopvvhju5.com^
 ||3p8801.co^
 ||3pf2kwmc3g.com^
@@ -6207,7 +6214,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||478789.everydayporn.co^
 ||47b48d19d4.com^
 ||47c7zhqak.com^
-||481886zoytj55y94nqgmo.cfd^
 ||484r.com/images/flash/gallery_
 ||4863232c.xyz^
 ||48c5089fa7.com^
@@ -6270,7 +6276,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||4l5bbkug99.com^
 ||4m7tpw5t267onpqht6zgeyg.rest^
 ||4mvkxs0o0.com^
-||4n8o8ntk77hmf52.cfd^
 ||4nc4qc1fo.com^
 ||4nfesm3itf.com^
 ||4nndezdx2u.com^
@@ -6496,6 +6501,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||5dycay3rr.com^
 ||5e2hf0q3a.com^
 ||5edf1d2qv.com^
+||5edrgrnqg.com^
 ||5ee515d98a.com^
 ||5ei1zlm7w7ut9bezxfj5.cfd^
 ||5eyal1g5a9.com^
@@ -6839,7 +6845,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||7d36a.com^
 ||7da1aovz6.com^
 ||7ddqvun8i1.com^
-||7ee7484ba9.com^
 ||7eehi3vqy3.com^
 ||7f777a77a6.com^
 ||7f89d90c6f.com^
@@ -6915,13 +6920,11 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||80s.us/9*.js
 ||80yc.com/js/yidong/
 ||811b27ab9f.com^
-||812346cb13.com^
 ||8131.qizhihaotian.cn^
 ||813c5.v.fwmrm.net^
 ||81bkkx81zd.com^
 ||81book.com/static/scripts/1.js
 ||81book.com/static/scripts/common.
-||81t59c8j7c3t56xg.cfd^
 ||81vuywtjyp592te.rest^
 ||828guvngj1.com^
 ||82e9ac3c1.com^
@@ -7035,6 +7038,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||8p14q886v2.com^
 ||8p814q01np.com^
 ||8pbiddjtp.com^
+||8pcwcf8yohwoxle2bcilztv7ocx61x.rest^
 ||8proe3xx6.com^
 ||8qfqhat9d.com^
 ||8rht5welv5.com^
@@ -7214,6 +7218,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||9ck9umcyvt.com^
 ||9clasfdc3.com^
 ||9cwcu1574.com^
+||9czq9ry9rouj7viti618mo5.cfd^
 ||9czqvvzlqzpt4zt2k.cfd^
 ||9d4a486df8.com^
 ||9da190a7d9.com^
@@ -7241,6 +7246,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||9foz3ujhiymihlgnru8jkznwu.rest^
 ||9fum.ifeng.com^
 ||9fz8rn9rqlfeimjoyic3uij.cfd^
+||9g1tqy7tz3z3v2wk2ie.cfd^
 ||9g3yx40s6.com^
 ||9g9fg6jh6y2vftvz7x6y.rest^
 ||9gau3j8x7.com^
@@ -7281,6 +7287,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||9pub.io^
 ||9pyn42z6d.com^
 ||9pzoz6taf.com^
+||9qbm4q34m29b5o4eh6xkn.rest^
 ||9r0v0go0el.com^
 ||9rkh7nbaj.com^
 ||9soefyenw.com^
@@ -7342,7 +7349,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||a.cnki.net/a/
 ||a.crazyporn.xxx^
 ||a.crme7srv.com^
-||a.deskpu.com^
 ||a.dipi.online^
 ||a.dlads.cn^
 ||a.duanmeiwen.com^
@@ -7356,6 +7362,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||a.find-me-girl.com^
 ||a.flirtads.net^
 ||a.frezeporn.site^
+||a.fucker.com^
 ||a.gentlefieldpattern.com^
 ||a.gripi.online^
 ||a.guidehub.lol^
@@ -7484,6 +7491,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||a65vocvbfe.com^
 ||a6cfvavw1.xyz^
 ||a6o69f9ky0.com^
+||a78lx5fbd.com^
 ||a85t9mxnj.com^
 ||a8clk.adventkk.co.jp^
 ||a8cv.adv.gr.jp^
@@ -7555,6 +7563,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||abadit5rckb.com^
 ||abadit5rckd.com^
 ||abalone46.com^
+||abaolokyjmlvj.top^
 ||abaryoyidjcso.store^
 ||abasedmeeds.cyou^
 ||abateadversity.com^
@@ -7563,6 +7572,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||abbao.cn^*adblock
 ||abberantdisheartenbandage.com^
 ||abberantpawnpalette.com^
+||abbotexperienceenchantment.com^
 ||abbotpredicateemma.com^
 ||abbott.vo.llnwd.net^
 ||abbreviateengland.com^
@@ -7601,7 +7611,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||abh.jp^
 ||abidalraioid.shop^
 ||abidebrokestow.com^
-||abiderszippier.cyou^
 ||abijcanrkm.com^
 ||abilityscale.com^
 ||abilitytoucan.com^
@@ -7615,7 +7624,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ablogica.com^
 ||abloomthurl.cyou^
 ||ablsrv.com^
-||abluentdecocttawpies.qpon^
 ||ablybeastssarcastic.com^
 ||abmedia.io/*/pum/
 ||abminbuy.com/789.
@@ -7690,6 +7698,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||abutformal.cfd^
 ||abvoltsspeise.cfd^
 ||abxajspanob.in^
+||abyssclued.qpon^
 ||abyssfar.com^
 ||abzzhkpnvkumt.website^
 ||ac*.786ip.com^
@@ -7733,7 +7742,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||accompanynovemberexclusion.com^
 ||accomplish89.com^
 ||accomplishedpersuadedprinter.com^
-||accomplishedsimilarly.com^
 ||accomplishedstrain.com^
 ||accomplishmentailmentinsane.com^
 ||accordancetimeneedless.com^
@@ -7798,7 +7806,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ackprovided.com^
 ||aclktrkr.com^
 ||acltickza.in^
-||aclysyuchi.cfd^
 ||acnemiablaguecontest.cfd^
 ||acneschudic.shop^
 ||acode.b2b.cn/JS/
@@ -7900,6 +7907,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ad-score.com^
 ||ad-server.co.za^
 ||ad-server.linkvertise.com^
+||ad-serverparc.nl^
 ||ad-specs.guoshipartners.com^
 ||ad-splash-tracking.hktvmall.com^
 ||ad-splash.hktvmall.com^
@@ -8032,6 +8040,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||adactive.cz^
 ||adadmin.house365.com^
 ||adadvisor.net^
+||adahumanhear.com^
 ||adalliance.io^$third-party
 ||adamantsnail.com^
 ||adamatic.co^$third-party
@@ -8057,7 +8066,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||adb.voyeur-house.org^
 ||adballoon.sooplive.com^
 ||adbd.liuxue86.com^
-||adbeacon.com^$third-party
 ||adbestnet.com^
 ||adbetclickin.pink^
 ||adbetnetwork.com^$third-party
@@ -9164,10 +9172,12 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||adtmonetize.com^
 ||adtng.com^
 ||adtoma.com^
+||adtonement.com^
 ||adtonos.com/attc-*.min.js
 ||adtonos.com^$third-party
 ||adtoox.com^
 ||adtorque.in^
+||adtotal.pl^
 ||adtpix.com^
 ||adtrace.org^
 ||adtrack.king.com^
@@ -9419,6 +9429,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||adzestocp.com^
 ||adzgame.com^
 ||adziff.com^
+||adzilla.meme^
 ||adzilla1.name^
 ||adzmedia.com^
 ||adzmob.com^
@@ -9500,6 +9511,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||affiliatemembership.com^
 ||affiliatepluginintegration.cj.com^
 ||affiliates.flightconnections.com^
+||affiliates.systems^
 ||affiliatesensor.com^
 ||affiliatestonybet.com^
 ||affiliatewindow.com^
@@ -9629,6 +9641,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||agl010.pro^
 ||agle21xe2anfddirite.com^
 ||aglobally.com^
+||agmtrk.com^
 ||agnelbehung.com^
 ||agnizecabbage.cyou^
 ||agogo.tv/images//uploads/ad/
@@ -9640,6 +9653,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||agorotainu.cyou^
 ||agort.xyz^
 ||agphirzasw.in^
+||agpxgwurmwahx.space^
 ||agqoshfujku.com^
 ||agqswmcnbi.com^
 ||agreatgodet.cfd^
@@ -9654,7 +9668,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||agroundmoieter.cfd^
 ||agsocbwoqjarf.website^
 ||agtcmuohbt.in^
-||agtlaylocktritish.cfd^
 ||aguaralekythi.cyou^
 ||aguo.com^$third-party
 ||agynarysyun.cyou^
@@ -9665,7 +9678,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ahaurgoo.net^
 ||ahbdsply.com^
 ||ahcdsply.com^
-||ahdcrajmzbtvj.com^
 ||aheadday.com^
 ||aheadgrow.com^
 ||aheadpains.com^
@@ -9845,6 +9857,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ajscdn.com^
 ||ajskgbnmafymf.space^
 ||ajtdumo.cn^$third-party
+||ajujqdualdsao.space^
 ||ajump1.com^
 ||ajump2.com^
 ||ajvznxaox.com^
@@ -10057,9 +10070,11 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||alitems.site^
 ||alitui.weibo.com^
 ||alive-airport.com^
+||alive-track.pro^
 ||aliveachiever.com^
 ||aliveprompt.com^
 ||alixixi.com/adsview/
+||aliyasfalces.shop^
 ||aliyosskivie.qpon^
 ||aliyuncs.com/ad/jd-smoofit-ad.jpg
 ||aliyuncs.com/gg/
@@ -10153,6 +10168,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||alternativecpmgate.com^
 ||althornboatmen.shop^
 ||altitude-arena.com^
+||altroseunlatch.qpon^
 ||alturaadvertising.com^
 ||altynamoan.com^
 ||alu.cn*/aluad/
@@ -10164,6 +10180,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||aluminsajenjo.shop^
 ||aluminumoutageprovince.com^
 ||alumnolbonelet.qpon^
+||aluvhyxwjnqyo.site^
 ||alviavalerie.cyou^
 ||alvusdrift.qpon^
 ||alwaysdomain01.online^
@@ -10233,6 +10250,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||amgdgt.com^
 ||amiabledelinquent.com^
 ||amiasdoubleryerb.qpon^
+||amidonbood.qpon^
 ||amidoxypochard.com^
 ||amidsttruly.com^
 ||amigosporn.com/api/ads/
@@ -10242,6 +10260,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||aminopay.net^
 ||amitaratelsdivvied.cyou^
 ||amlindred.com^
+||amlumineona.com^
 ||ammcg.imgscloud.com/toy/
 ||ammkthgqgatco.space^
 ||ammnugdazobz.in^
@@ -10382,6 +10401,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||annihilativefaltermillion.com^
 ||announceproposition.com^
 ||announcingmyrtleusual.com^
+||annowomb.qpon^
 ||annoyedairport.com^
 ||annoyingacoustics.com^
 ||annoyingclover.com^
@@ -10425,6 +10445,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||antlerlode.com^
 ||antlermaze.com^
 ||antliaredried.com^
+||antlikemimmed.qpon^
 ||antmyth.com^
 ||antoecilaptop.cfd^
 ||antoiew.com^
@@ -10629,7 +10650,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||app2n.cn^$third-party
 ||apparatus49.top^
 ||appastpardi.cfd^
-||appayairmass.cyou^
 ||appbaqend.com^
 ||appboy-images.com^
 ||appclick.net^
@@ -10747,7 +10767,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||arcatogamest.com^
 ||archaicmsflip.com^
 ||archetype32.top^
-||archivecerevis.cyou^
 ||archivefrom502.com^
 ||archswimming.com^
 ||arcidaemestees.cyou^
@@ -10782,11 +10801,11 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||arkaphids.qpon^
 ||arkdcz.com^
 ||arkfacialdaybreak.com^
+||arkgzwtbxqilk.space^
 ||arkoseriotisemicra.cfd^
 ||arlavilqyt.com^
 ||armanet.us^$third-party
 ||armingberith.shop^
-||armingsouther.qpon^
 ||arminius.io^
 ||armourniellos.qpon^
 ||armqfyjmuotq.in^
@@ -10796,6 +10815,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||army.delivery^
 ||arnattoprana.com^
 ||arneremian.cyou^
+||arnimalconeer.com^
 ||aromamirror.com^
 ||aroundcommoditysway.com^
 ||aroundwhoever.com^
@@ -10805,14 +10825,12 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||arpenexcite.cfd^
 ||arpsrquygqpdh.site^
 ||arracksoapsud.shop^
-||arrdnboauysbn.com^
 ||arrivedeuropean.com^
 ||arrivegrowth.com^
 ||arrivesfarcer.qpon^
 ||arrivespachakrhema.qpon^
 ||arrogancedanderuntruth.com^
 ||arroyoammu.cyou^
-||arrtakhihfze.in^
 ||arsenylasearch.com^
 ||arsonincreasingmedic.com^
 ||arswabluchan.com^
@@ -10918,6 +10936,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||asp300.*/2017js/
 ||aspendryrot.shop^
 ||aspensjokist.shop^
+||asperlyhallowsleersia.cfd^
 ||aspignitean.com^
 ||aspirationprogrammecontains.com^
 ||aspirincountryprofound.com^
@@ -10982,7 +11001,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||astronneatens.cfd^
 ||astrsk.net^
 ||asuracomic.net/api/ads/
-||aswimreverbs.qpon^
 ||aswznfqlssmvc.online^
 ||asxxyqkhauntp.site^
 ||asy76rvai.com^
@@ -11003,6 +11021,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||atarrean.com^
 ||atas.io^
 ||ataxiatearletpyvuril.cyou^
+||atbphahu.in^
 ||atcgjcnsrkygu.com^
 ||atdeerlinga.com^
 ||atdmt.com^
@@ -11033,6 +11052,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||atonato.de^
 ||atonementimmersedlacerate.com^
 ||atool.org/res/ads/
+||atopiescharr.qpon^
 ||atpm.cn^
 ||atpodqbap.in^
 ||atraff.com^
@@ -11277,6 +11297,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||awmdelivery.com^
 ||awmplus.com^
 ||awnexus.com^
+||awnlesscashboy.cfd^
 ||awokenreeshle.shop^
 ||awprt.com^
 ||awptjmp.com^
@@ -11310,7 +11331,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||axkq.xyz^$third-party,script
 ||axmaxhsa.com^
 ||axmendodonapicea.cfd^
-||axmlccssip.com^
 ||axon.ai^
 ||axonix.com^
 ||axouuokgbpcdq.space^
@@ -11327,6 +11347,8 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ayancqseakeek.space^
 ||aybhalkar.com^
 ||aybikaemg.com^
+||ayhtyuwusyvod.space^
+||ayinstrikes.cfd^
 ||aylink.co/webroot/js/toast.js
 ||ayodanuauw.com^
 ||ayparnarzt.com^
@@ -11398,6 +11420,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||b1ht7m8bkbjc32t2yij7yutub.cfd^
 ||b1o8h004u5.com^
 ||b1zftjhtwb.com^
+||b2b719b22c.com^
 ||b2iy3ce7tibff9.cfd^
 ||b2skdf.com^
 ||b2v18mn8f6.com^
@@ -11607,6 +11630,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bakupost.az/banner
 ||bakyayljzhoga.online^
 ||balancedsuppercreed.com^
+||balantetruisms.qpon^
 ||balasesgaleenybursty.qpon^
 ||balconrekiss.cyou^
 ||baldeninfarehappier.cfd^
@@ -11646,6 +11670,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||banma.com/js/adi.js
 ||banma.com/statics/scripts/common/dialogAdJs.js
 ||bannedbook.org/bnews/bnews-tab.html$third-party
+||bannedpoachy.cfd^
 ||banner-iframe.com^
 ||banner.*.tccapis.com^
 ||banner.bet365partners.com^
@@ -11673,7 +11698,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bannersnack.com^$third-party,domain=~bannersnack.dev
 ||bannerwall.herewetest.com^
 ||bannerwall.s3.appcnt.com^
-||bannery.hledejceny.cz^$third-party
 ||bannisterflaskputdown.com^
 ||bannoillt.com^
 ||banquetunarmedgrater.com^
@@ -11754,7 +11778,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bawdybalance.com^
 ||bawdybeast.com^
 ||bawixi.xyz^
-||bawkeneeder.cyou^
 ||bawledtootsie.cfd^
 ||bayctrk.com^
 ||baysbunkie.cyou^
@@ -11820,7 +11843,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bcquan.me/front/*_game
 ||bcquan.me/front/home/render
 ||bcshuku.*/foot.php
-||bcsyfuhahnlmh.online^
 ||bctt.igaming-service.io^
 ||bcvxynjpdtrcc.space^
 ||bcwhnizcbethy.website^
@@ -11964,6 +11986,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||beauty1.xyz^
 ||bebangcaromel.com^
 ||bebasads.com^
+||bebasteshogs.shop^
 ||bebayahir.shop^
 ||bebaydeglory.cyou^
 ||bebi.com^$third-party
@@ -11979,7 +12002,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||becoquin.com^
 ||becorsolaom.com^
 ||becostbastes.cfd^
-||becrybotonnysyriac.cyou^
 ||becuibabrooks.cyou^
 ||becurryscaring.shop^
 ||bedaffyamen.cfd^
@@ -12020,6 +12042,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||behance.vo.llnwd.net^
 ||behavepassword.com^
 ||behavior65.top^
+||behkfu2mplp8y5.cfd^
 ||behovepimp.qpon^
 ||behowlbasongo.qpon^
 ||behvjsweshylu.online^
@@ -12040,7 +12063,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||belchlipin.com^
 ||beldamnolos.cfd^
 ||beldooschae.com^
-||belfrybreathrich.com^
 ||beliefnormandygarbage.com^
 ||believeliftinggag.com^
 ||believemefly.com^
@@ -12100,6 +12122,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||beop.io^$third-party
 ||bepearlrupaliquors.cfd^
 ||bepearlxylon.qpon^
+||bepewedshilf.qpon^
 ||bepolite.eu^
 ||bepqyvmaqlib.com^
 ||bepranktorenia.shop^
@@ -12163,6 +12186,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bestproducttesters.com^
 ||bestrevenuenetwork.com^
 ||bestshoesboot.com^
+||bestsizeservice.top^
 ||bestsurferprotector.com^$third-party
 ||bestvogue.com/fans/
 ||besullyyampa.qpon^
@@ -12177,7 +12201,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||betisleaves.cfd^
 ||betmasquerainchan.com^
 ||betmenaff.com^
-||betmhlyylvcvuof.com^
 ||betoga.com^
 ||betotodilea.com^
 ||betpupitarr.com^
@@ -12305,7 +12328,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bidscape.it^$third-party
 ||bidsms.com^
 ||bidsopt.com^
-||bidsssmmjviwi.site^
 ||bidster.net^
 ||bidswitch.net^
 ||bidsxchange.com^
@@ -12434,9 +12456,11 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||birthdaybelief.com^
 ||birthedbegging.cyou^
 ||birthjeans.icu^
+||bisa-aja.my.id^
 ||bisecthosting.com/partners/custom-banners/$third-party
 ||bisetsoliped.com^
 ||biskkonak.cyou^
+||bismerbaskish.qpon^
 ||bisonads.com^
 ||bistoury55.com^
 ||bistrosunsawed.cyou^
@@ -12461,7 +12485,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||biz-cdn.varzesh3.com/banners
 ||biz.gexing.com^
 ||bizcwuhi.in^
-||bizjournals.com/static/js/app/cxense.js
 ||bizographics.com^
 ||bizonads-ssp.com^
 ||bizosama.com^
@@ -12509,7 +12532,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bkgclwupffqez.site^
 ||bkhpdrblv.com^
 ||bkhxut1rz.com^
-||bkibtbefjo.com^
 ||bkill.com/css/js/*top
 ||bkill.com/css/js/abcbl.js
 ||bkill.com/css/js/xinbkill.js
@@ -12519,6 +12541,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bkjia.com/bkjia/js/artitle.js
 ||bkjia.com/bkjia/js/banner
 ||bkjia.com/bkjia/js/subnavtop.js
+||bkllgmvwovnxo.online^
 ||bklxjstogskih.site^
 ||bkngknjwvclfi.space^
 ||bkprmw.ironyporno.com^
@@ -12577,7 +12600,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||blinkjork.com^
 ||blinksbobblepadding.com^
 ||blirtonethe.com^
-||blirtritz.cfd^
 ||blismedia.com^
 ||blisscalendar.com^
 ||blissfulcrescendo.com^
@@ -12592,7 +12614,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||blnovelhub.com/css/arst.js
 ||blnqxamvvygof.website^
 ||bloatingexpectantretinal.com^
-||blobberdepthdieri.cfd^
 ||bloblohub.com^
 ||block-ad.com^
 ||blockadsnot.com^
@@ -12704,6 +12725,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bngwlt.com^
 ||bnhtml.com^
 ||bnikrjpiirjth.website^
+||bniojznwonvfk.com^
 ||bnqektutom.com^
 ||bnrdom.com^
 ||bnrs.it^
@@ -12714,6 +12736,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bnserving.com^
 ||bnti.cn^
 ||bnwkkmectbmbp.site^
+||bnwpawfhzxcpw.site^
 ||bo.zymorico.store^
 ||boannre.com^
 ||boarchoribi.qpon^
@@ -12767,6 +12790,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bojel.com^
 ||bojwjagsakkay.space^
 ||bokarkdolcian.cfd^
+||bokbxunnvmxtm.online^
 ||bokepindo13.name^
 ||bokharapedesisskelvy.qpon^
 ||boldbars.com^
@@ -12780,6 +12804,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bolsterate.net^
 ||boltepse.com^
 ||bolussprugpupulo.qpon^
+||bombedmhg.qpon^
 ||bonad.io^
 ||bonafides.club^
 ||bonbonme.com/js/g1313166/
@@ -12870,6 +12895,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||boskodating.com^
 ||bosksalagoothmany.cyou^
 ||bosomycrampetpoof.cfd^
+||bossierreek.qpon^
 ||bossip.com/wp-content/plugins/ione-modules/*/universal-ads/
 ||bossyhearing.com^
 ||bossyjunior.pro^
@@ -13056,7 +13082,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||brick.xhamster3.com^
 ||bricks-co.com^$third-party
 ||brid.tv^$script,domain=67hailhail.com|deepdaledigest.com|forevergeek.com|geordiebootboys.com|hammers.news|hitc.com|molineux.news|nottinghamforest.news|rangersnews.uk|realitytitbit.com|spin.com|tbrfootball.com|thechelseachronicle.com|thefocus.news|thepinknews.com
-||bridalssnugs.qpon^
 ||bridgeskeyword.shop^
 ||bridgetrack.com^
 ||briefate.com^
@@ -13080,6 +13105,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||brilliantconcealed.com^
 ||brilliantfaronly.com^
 ||brilliantpiece.com^
+||brimmedsclereyemen.qpon^
 ||bringertrustle.cfd^
 ||bringmesports.com^
 ||brinjallocust.qpon^
@@ -13094,7 +13120,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||brisknessdebtordismiss.com^
 ||briskstorm.com^
 ||brissdutchy.shop^
-||bristolarchfoe.cfd^
 ||britainbetrayalbands.com^
 ||brithungown.com^
 ||britishinquisitive.com^
@@ -13182,7 +13207,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bsxmuny.wp.pl^
 ||bsxswvrbstntq.site^
 ||bsyrimw.xyz^
-||bszyaottpphkq.online^
 ||bt-tt.com/ad
 ||bt.cn/bbs/newsimg/
 ||bt1.patexplorer.com^
@@ -13211,7 +13235,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||btlzaneopgiie.site^
 ||btmao.cc/Public/yd/
 ||btmovi.in/static/js/xf.js
-||btmpxsnzu.com^
 ||btmulu.com/assets/*/ad02.gif
 ||btn.onlylady.com^
 ||btn.pchome.net^
@@ -13255,6 +13278,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||budsminepatent.com^
 ||budtawney.com^
 ||buffooncountabletreble.com^
+||bufvrxymutjwx.online^
 ||bug.hr/ads/
 ||bugaruche.com^
 ||buggishbecomeme.org^
@@ -13310,7 +13334,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bulbedgurl.cyou^
 ||bulbletgauntly.cfd^
 ||bulginglair.com^
-||bulgingreact.com^
 ||bulky-battle.com^
 ||bullanagal.qpon^
 ||bulletinsituatedelectronics.com^
@@ -13345,6 +13368,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||buram.xyz^
 ||burdenspinards.qpon^
 ||burdieahmed.cyou^
+||bureausmutiny.cfd^
 ||burette34.com^
 ||burgersalt.com^
 ||burglargiggleportion.com^
@@ -13356,6 +13380,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||burlywhistle.com^
 ||burnbubble.com^
 ||burnetsasgmt.com^
+||burnetschurl.shop^
 ||burniecrepes.com^
 ||bursa.conxxx.pro^
 ||burstnet.com^
@@ -13425,6 +13450,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bwau1s2fm.com^
 ||bwdcppiua.com^
 ||bwitahqriaz.in^
+||bwjdgmsebmnub.online^
 ||bwlnnrdsqondjy.com^
 ||bwmm4ep65y7i751j.cfd^
 ||bwnzpudgucjrf.site^
@@ -13505,7 +13531,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||bzkmqr6vo4.com^
 ||bzlmtuniv.com^
 ||bzmbrsm.com^
-||bzoomlubqo.com^
 ||bzp2fqad7o.com^
 ||bzphcxhcwuiab.site^
 ||bzqy2p14z.com^
@@ -13846,6 +13871,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||carrelsfrankly.shop^
 ||carrick-ui.advoncommerce.com^
 ||carriedamiral.com^
+||carrotsmacaca.qpon^
 ||carryenjoy.com^
 ||carsarace.com^
 ||carscannon.com^
@@ -13857,7 +13883,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cartoon-sex.tv/z/cartoontube-300x100.gif
 ||cartoon18.com/images/friend/
 ||cartrigepromised.com^
-||cartyfuagetriseme.qpon^
 ||carusmurdrum.qpon^
 ||carvaldemistglycyl.qpon^
 ||carvecakes.com^
@@ -13874,6 +13899,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cashawsbreck.qpon^
 ||cashcinemaunbiased.com^
 ||cashgzb.com^
+||cashingonymitykavi.qpon^
 ||cashingpostman.shop^
 ||cashmachines.biz^
 ||cashprom.ru^
@@ -13954,6 +13980,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cbgvwjveaptbn.website^
 ||cbhtmlaufcogf.space^
 ||cbhzxctgm.com^
+||cbizitmyaprju.com^
 ||cbjk6j85d.com^
 ||cbjs.baidu.com^
 ||cbo9vo98i.com^
@@ -14246,7 +14273,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ce9qb0h4v.com^
 ||ceasepancreas.com^
 ||cebineviewingvaluta.cfd^
-||cecalsukeyicker.qpon^
 ||cecawrmlnqkmp.website^
 ||cedecancontemporary.com^
 ||cedrelacruddle.com^
@@ -14353,7 +14379,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||chainads.io^
 ||chaindisc.com^
 ||chaindoorman.com^
-||chainonjoy.qpon^
 ||chaintopdom.nl^
 ||chaipoodrort.com^
 ||chaireggnog.com^
@@ -14445,7 +14470,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||chedethw.com^
 ||cheepalebion.shop^
 ||cheese08062025.shop^
-||cheesedgrappafusht.cyou^
 ||cheesevp.com^
 ||cheesydrinks.com^
 ||cheesyreinsplanets.com^
@@ -14478,6 +14502,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||chesterstream.akamaized.net/chester-adcross/$domain=ameblo.jp
 ||chestgoingpunch.com^
 ||chetchoa.com^
+||chewinkascesis.shop^
 ||chewinksanify.qpon^
 ||chewsever.com^
 ||chexun.com/delivery?
@@ -14502,10 +14527,10 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||childlikeform.com^
 ||chiliesspate.shop^
 ||chilihandshakewing.com^
-||chilionfulvenelull.cyou^
 ||chillimagepublisher.com^
 ||chillingtofu.com^
 ||chillisontal.qpon^
+||chilly-king.pro^
 ||chiluyingxiao.com^$third-party
 ||china.chemnet.com/cnbanner/
 ||china.cn/js/common/local_hydn/
@@ -14752,6 +14777,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||clarity.abacast.com^
 ||clarity.ms^
 ||clarityid.top^
+||claspervenomly.cyou^
 ||classic-bonus.com^
 ||classic.39health.com^
 ||classicnotebook.com^
@@ -14984,8 +15010,8 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cloudtraff.com^
 ||cloudvideosa.com^
 ||cloudyjacket.com^
+||cloudysoil.com^
 ||cloutyflappet.cyou^
-||clovereyelike.cfd^
 ||clownbuses.qpon^
 ||clprr.com^
 ||clrstm.com^
@@ -15070,6 +15096,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cnjxol.com/images/20191031.png
 ||cnjxol.com/jxrbPaper/pc/static/js/scroll.js
 ||cnkang.com/showcodejsonp?
+||cnkbiotmdnegp.space^
 ||cnki.net/spot/app/get/ads?
 ||cnlg.cn/attached/script/
 ||cnlr.thepornstar.com^
@@ -15143,7 +15170,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cocosdustuck.cyou^
 ||cod.governmentaladvisory.com^
 ||cod.southmoney.com^
-||coddyeuripos.cyou^
 ||code.ainsyndication.com^
 ||code.ditiezu.net^
 ||code.geonamebase.com^
@@ -15193,7 +15219,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||coinzillatag.com^$third-party
 ||coisj3nil.com^
 ||colamanga.com/sw.js
-||colbwxlsfenwn.website^
 ||coldbalance.com^
 ||coldcallpro.com^
 ||coldflownews.com^
@@ -15210,7 +15235,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||collectrum.com^
 ||colleem.com^
 ||collopmessmen.qpon^
-||collybabohora.shop^
 ||colonist.io/dist/images/ab_
 ||colonistnobilityheroic.com^
 ||colonyeducate.cfd^
@@ -15504,7 +15528,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cootlogix.com^
 ||copacet.com^
 ||copalundo.cfd^
-||copartbells.shop^
 ||copiousgoutswimwear.com^
 ||copitacoodle.cyou^
 ||copitinamon.com^
@@ -15548,6 +15571,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cornpic.com/images/*.gif
 ||cornualsinamin.cyou^
 ||cornyband.pro^
+||corojohusband.com^
 ||coronaehavance.shop^
 ||coronetbaying.cyou^
 ||correctdilutetrophy.com^
@@ -15564,6 +15588,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||coscetfec.cfd^
 ||coseismcimeter.qpon^
 ||cosetengarb.com^
+||cosetssovkhoz.com^
 ||cosherslattens.qpon^
 ||cosinescichlid.cyou^
 ||cosiskkm.com^
@@ -15764,6 +15789,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||crazyworry.pro^
 ||crbbgate.com^
 ||crbck.link^
+||crbcxvqszeexk.space^
 ||crcdn.org^$image,domain=uiil.ink
 ||crcnavy.shop^
 ||crdefault.link^
@@ -15838,6 +15864,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||crescentstocky.com^
 ||cresfpho2ntesepapillo3.com^
 ||cresoxyformicmunandi.cyou^
+||crestedsibylstopper.qpon^
 ||cretgate.com^
 ||crevicedepressingpumpkin.com^
 ||criblarkscores.cyou^
@@ -15846,6 +15873,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||crimsonmeadow.com^
 ||crimsonrhyme.com^
 ||crimsonserene.com^
+||cringlelotas.cfd^
 ||crinkhartall.cyou^
 ||crinukpd.com^
 ||cripestribune.qpon^
@@ -16047,11 +16075,13 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cuffeddimmer.com^
 ||cuisineenvoyadvertise.com^
 ||cuivordvonnsy.site^
+||cuk180l9v.com^
 ||cukeonelo.com^
 ||culinar9sync.com^
 ||culledge.qpon^
 ||culledmyosin.cyou^
 ||cullemple-motline.com^
+||culmchidden.shop^
 ||culotankoli.shop^
 ||cultivated-guitar.com^
 ||cultivationclassicalstarter.com^
@@ -16073,6 +16103,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cupid.iqiyi.com/mixer?
 ||cupid.iqiyi.com/show2?
 ||cupidirresolute.com^
+||cupidrecession.com^
 ||cuplikenominee.com^
 ||cupoabie.net^
 ||cuqpi.cn^
@@ -16179,6 +16210,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||cycyw.com/qdj/
 ||cydoniacavorts.qpon^
 ||cydonialah.qpon^
+||cydonrespelt.cyou^
 ||cydontopply.shop^
 ||cyecmyrbfvvcy.website^
 ||cygalwwkhhimv.space^
@@ -16694,7 +16726,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||d3l320urli0p1u.cloudfront.net^
 ||d3lcz8vpax4lo2.cloudfront.net^
 ||d3lliyjbt3afgo.cloudfront.net^
-||d3ln1qrnwms3rd.cloudfront.net^
 ||d3lppnezw695ey.cloudfront.net^
 ||d3lvr7yuk4uaui.cloudfront.net^
 ||d3m4hp4bp4w996.cloudfront.net^
@@ -16767,6 +16798,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||d5092moci.com^
 ||d56p.com/love/
 ||d580eca1d1.com^
+||d594f004f4.com^
 ||d5c1b32380.com^
 ||d5d26b2710.com^
 ||d5onopbfw009h.cloudfront.net^
@@ -16841,6 +16873,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||daffaite.com^
 ||daffleuraliancountor.cyou^
 ||daftarfilles.shop^
+||daftporn.com/out.php?
 ||dagameuster.cyou^
 ||dagglybung.qpon^
 ||dagheshwisshe.com^
@@ -17081,6 +17114,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dcai7bdiz5toz.cloudfront.net^
 ||dcba.zle.com^
 ||dcbbwymp1bhlf.cloudfront.net^
+||dcbnameendplay.qpon^
 ||dcff90fa75.com^
 ||dcfnihzg81pa.com^
 ||dcgbuqiqsxrsv.online^
@@ -17124,8 +17158,10 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ddyveshu.cc/*/*ll*.js
 ||ddzk5l3bd.com^
 ||ddzswov1e84sp.cloudfront.net^
+||ddzyijhyaujus.site^
 ||de.as.pptv.com^
 ||de2nsnw1i3egd.cloudfront.net^
+||deaconpitangacolory.cfd^
 ||dead-put.com^
 ||deadlinescreechvisit.com^
 ||deafeningdock.com^
@@ -17178,6 +17214,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||decklibrary.com^
 ||decknetwork.net^
 ||declk.com^
+||decollhertzes.cfd^
 ||decorateadverb.com^
 ||decoratedmulesanta.com^
 ||decoycreation.com^
@@ -17195,7 +17232,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||deedeisasbeau.org^
 ||deefauph.com^
 ||deeginews.com^
-||deegvcassuvkz.online^
 ||deehalig.net^
 ||deemainunh.com^
 ||deemphotousage.com^
@@ -17319,6 +17355,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||deputizeeverydayexorcist.com^
 ||deputizepacifistwipe.com^
 ||deputyconnate.com^
+||deputydelicacyopt.com^
 ||depwwdntgavyc.website^
 ||deqixs.com/config/
 ||deqixs.com/config/tj.js
@@ -17457,7 +17494,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dfunqslocpfir.site^
 ||dfx.xtapes.porn^
 ||dfyl.eeeeehfghrq555^$~third-party
-||dfyzanpmamz.in^
 ||dg6gu9iqplusg.cloudfront.net^
 ||dg9sw33hxt5i7.cloudfront.net^
 ||dgaf2ncy4dtan.cloudfront.net^
@@ -17475,7 +17511,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dh5t3pyb6r.com^
 ||dh8azcl753e1e.cloudfront.net^
 ||dh8ypn3lq8.com^
-||dhaicaecity.cfd^
+||dhanroop.cfd^
 ||dharanibariasonable.qpon^
 ||dhcjty.com^
 ||dhckj73qr3.com^
@@ -17522,6 +17558,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dianyingim.com/statics/recommend/
 ||dianyingtu.com/common/api_getAcode.php
 ||diaoyu123.com/cpro/show.js
+||diaperflavedo.qpon^
 ||diaplexale.cyou^
 ||diapsidbuchloe.com^
 ||diarizedeploy.cyou^
@@ -17539,7 +17576,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dicotylsau.cyou^
 ||dicsfamub.in^
 ||dict.youdao.com/vip/privilege/show/V*?bannerType=fanyiTop$domain=fanyi.youdao.com
-||dictateirriplaceableirriplaceable.com^
 ||dictdebtee.cfd^
 ||didachepositum.cfd^
 ||didna.io^
@@ -17547,6 +17583,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||diebackridspaijama.qpon^
 ||dieka888.com/app_ad/
 ||diemniwm.com^
+||diestock20.com^
 ||diestock56.top^
 ||dif1qbzytaymu.cloudfront.net^
 ||diffgremio.com^
@@ -17623,6 +17660,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dioguitar23.*/images/*.gif
 ||dioimg.net/images/*.gif
 ||dioimg.net^$domain=18board.com|18board.net|18p2p.com
+||diosmindaftest.shop^
 ||diosminfurzier.shop^
 ||diouidlf98.com^
 ||diplomahawaii.com^
@@ -17702,7 +17740,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||disloyal-valuable.com^
 ||disloyalmoviesfavor.com^
 ||dismantlepenantiterrorist.com^
-||dismawgassynascan.cyou^
 ||dismisscomplicatedfoolproof.com^
 ||disnaboleros.cyou^
 ||disnestfolly.cyou^
@@ -17778,7 +17815,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dizhiyou.xyz/js/ls.js
 ||dizzardmags.cyou^
 ||dizziness47.com^
-||dizzyexit.com^
 ||dizzypiece.com^
 ||dizzyshow.com^
 ||dj-updates.com^
@@ -17790,6 +17826,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||djgnqo9p1icyr.cloudfront.net^
 ||djhfnwquuayww.website^
 ||djicdn.com/uploads/ad_image_file/
+||djinnscratchpalach.qpon^
 ||djkcofucehint.website^
 ||djm080u34wfc5.cloudfront.net^
 ||djmss.cn^$~third-party
@@ -17813,6 +17850,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dkfjlkgjbhbv.com^
 ||dkgsujvc.com^
 ||dkhtttpkdomgw.website^
+||dkkqqhonowers.site^
 ||dkre4lyk6a9bt.cloudfront.net^
 ||dkrfhwlep.com^
 ||dkrmcnubzpcnd.website^
@@ -17913,6 +17951,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dmzj1.com/js/ad/
 ||dmzjmp.com^
 ||dn*.ixinwei.com^
+||dn3uy6cx65ujf.cloudfront.net^
 ||dn6rwwtxa647p.cloudfront.net^
 ||dn7u3i0t165w2.cloudfront.net^
 ||dnasolves.com/static/js/embed.js$domain=websleuths.com
@@ -17998,6 +18037,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||domnsooky.cyou^
 ||dompeterapp.com^
 ||domslc.com^
+||donaryabolete.shop^
 ||donasi.lk21.de^
 ||donecperficiam.net^
 ||dongakalema.cfd^
@@ -18227,6 +18267,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||drollwharf.com^
 ||dromonsunionedipidae.cfd^
 ||droppeddeem.com^
+||droppedsqueals.cyou^
 ||dropsauburnstenants.cfd^
 ||droseraparges.shop^
 ||drossedruffledvalois.cyou^
@@ -18343,7 +18384,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dsmmadvantage.com^
 ||dsmmzo.com^
 ||dsmwju.com^
-||dsmxnw.com^
 ||dsmzof.com^
 ||dsnbwt.com^
 ||dsndcg.com^
@@ -18412,7 +18452,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dsvhko.com^
 ||dsvjgw.com^
 ||dsvkxa.com^
-||dsvopb.com^
 ||dsvosm.com^
 ||dsvwjthpubxqs.site^
 ||dsvxfq.com^
@@ -18425,7 +18464,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dsxilh.com^
 ||dsxlez.com^
 ||dsxpzd.com^
-||dsxsyt.com^
 ||dsybif.com^
 ||dsydvb.com^
 ||dsyfrh.com^
@@ -18478,6 +18516,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||du1.bbdj.com^
 ||du2uh7rq0r0d3.cloudfront.net^
 ||dualinvirallyfatuism.cyou^
+||dualismaflower.qpon^
 ||duanmeiwen.com/static/cpt/img/write_right_float.png
 ||duapp.com^$domain=bjmama.com|ccav1.com|gzmama.com
 ||duba.com/baidu
@@ -18510,7 +18549,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dukwznn0x.com^
 ||duleonon.com^
 ||dulillipupan.com^
-||dullardalbinal.cfd^
 ||dullequivalent.com^
 ||duloessal.cfd^
 ||dulojet.com^
@@ -18629,6 +18667,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||dykshao.cn/image/$third-party
 ||dykzorrcupwpg.space^
 ||dymmt.com/skin/mzitu/js/foot.
+||dyn.varsity.co.uk^
 ||dynaads.net^
 ||dynamitedata.com^
 ||dynbanners.netlify.app^
@@ -18899,7 +18938,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ecommerce-events.adscale.com^
 ||economicadvantage.midamerican.com^
 ||economictimes.com/etmpat/
-||economyclower.qpon^
 ||economysoil.com^
 ||econventa.com^
 ||ecpoc.com/style/ad
@@ -19013,7 +19051,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||effjlunwmzeds.site^
 ||effluveputting.com^
 ||efformiodoso.qpon^
-||effortnapping.qpon^
 ||effulgentnook.com^
 ||effulgenttempest.com^
 ||efg.zle.com^
@@ -19078,6 +19115,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||eiv.baidu.com^
 ||eiwslffjsmmse.space^
 ||eixypottzpleb.space^
+||eiypmtqnrfdph.site^
 ||eizkswbhhnlsw.website^
 ||eizzih.com^
 ||ej8f5vk381.com^
@@ -19099,8 +19137,10 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ekdtywtkc.com^
 ||ekhay.com^
 ||ekhsvsp.com^
+||ekhwbzfks.com^
 ||ekjjvwrdbm.com^
 ||ekjkfnbgpfrbd.website^
+||ekklgpfmaviji.online^
 ||eklzt1bvv.com^
 ||eknrintckqimu.online^
 ||ekpafzj.com^
@@ -19136,7 +19176,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||elecfans.com/webapi/advertisement/
 ||electranowel.com^
 ||electricalbicyclelistnonfiction.com^
-||electricruin.pro^
 ||electrode28.com^
 ||electronic23.com^
 ||electthirteenth.com^
@@ -19157,7 +19196,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||elizarucksack.com^
 ||eljapgvrxqxxn.space^
 ||elkbxkuqqgqzy.site^
-||elkkvjrmxl.com^
 ||ellipticaltrack.com^
 ||elmerpmsd.com^
 ||elmiestindishshole.qpon^
@@ -19195,7 +19233,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||embed.ex.co^$third-party
 ||embed.sendtonews.com/*/embedcode.js$domain=ratemyprofessors.com
 ||embed.sendtonews.com^$third-party,domain=~shmoop.com
-||embed.st/ad.html
 ||embedx.name^
 ||embeliapodalectypes.cyou^
 ||embellishedmeadow.com^
@@ -19386,6 +19423,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||enwwoveprocess.qpon^
 ||enzf.cn^
 ||eo2eaqg5no.com^
+||eocenearmine.cyou^
 ||eocymcdi.com^
 ||eofst.com^
 ||eoithspschent.qpon^
@@ -19408,6 +19446,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||eosinsclatterreve.qpon^
 ||eovhjagicwtxn.site^
 ||ep.umobile.pl^
+||epacash.com^
 ||epauletfours.cyou^
 ||eperlanskiffs.qpon^
 ||epeuslilacky.cyou^
@@ -19423,7 +19462,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||epidemybearpaw.com^
 ||epidermispushupvariable.com^
 ||epigoniincaspushily.qpon^
-||epihyalkittle.cfd^
 ||epiloggincorona.qpon^
 ||epimenidis.in.gr/shopflix/widget.php$domain=in.gr
 ||eplukorxrmfvy.site^
@@ -19518,6 +19556,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||eshqskffhqaz.com^
 ||eshsm.amazethreads.com^
 ||eskimi.com^
+||esnmwpnjxmkwq.space^
 ||esnqwiyhvuv.com^
 ||esoterictools.com^
 ||esozdcn.icu^
@@ -19556,7 +19595,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ethhbpkcdrxlv.website^
 ||ethicalads.io^
 ||ethicel.com^
-||ethizeeuripusbaudery.cfd^
 ||ethnicchristmassocks.com^
 ||ethylictoko.cfd^
 ||etivfnfdlwwlc.online^
@@ -19570,6 +19608,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||etqu.cn^
 ||etqyveeihyh7uu.rest^
 ||etrader.kalahari.net^
+||etrownlnplynt.website^
 ||ettalecture.cyou^
 ||ettoday.net/ad/*_action.js
 ||ettoday.net/banners/
@@ -19588,7 +19627,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||eumcqhqvajcwc.website^
 ||eumihbvcyiprs.online^
 ||eunow4u.com^
-||euodicoch.qpon^
 ||euooo.theadventurechallenge.com^
 ||euosicjxjv.com^
 ||euphroeandrite.cfd^
@@ -19695,6 +19733,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||exhalesyntheticundefined.com^
 ||exhibits86.com^
 ||exhibitsneeze.com^
+||exhumedenabledrotated.qpon^
 ||exhumemealiemaux.cyou^
 ||eximdigital.com^
 ||exinariuminix.info^
@@ -19710,6 +19749,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||exnesstrack.com^
 ||exoclick.com/ad_track.js
 ||exoclick.com^$third-party
+||exodiumrasure.qpon^
 ||exodiumriveter.com^
 ||exodtsamansys.online^
 ||exodusjailhousetarantula.com^
@@ -19742,7 +19782,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||exptlgooney.com^
 ||expyplagues.qpon^
 ||exquisiteartisanship.com^
-||exrhumeraltores.cyou^
 ||exrtbsrv.com^
 ||exrwl.com^
 ||ext-jscdn.com^
@@ -20082,6 +20121,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fd5237eac5.com^
 ||fd6s5sa7ji.com^
 ||fd80s.com/static/m.
+||fdadmvbteroqf.space^
 ||fdapqupdmw.com^
 ||fdbfqpbjhmidw.space^
 ||fdc.com.cn^*adv
@@ -20221,7 +20261,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fglnuemnfeyfh.space^
 ||fgmqmxsytyvzm.space^
 ||fgn.cdn.serverable.com^$image,domain=porcore.com
-||fgsildmh.com^
 ||fgsxkowyyvqhd.space^
 ||fgtyhocutb.com^
 ||fgwuw.com^
@@ -20238,6 +20277,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fhgh9sd.com^
 ||fhhctb.icu^
 ||fhhhuwhsabwlh.online^
+||fhixtsjuatixm.space^
 ||fhnahnad.com^
 ||fhorrhvymc.com^
 ||fhovoldaw.com^
@@ -20254,6 +20294,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fiddleyhigdon.com^
 ||fidruqwny.com^
 ||fieldconfig.com^
+||fieldybejeled.qpon^
 ||fifeeebyrbxlf.website^
 ||figglefodge.com^
 ||fightmallowfiasco.com^
@@ -20285,6 +20326,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||filestube.com^$third-party
 ||filetarget.com^
 ||filetarget.net^
+||filicestemin.cyou^
 ||filletfiguredconstrain.com^
 ||fillingwiltingoutwish.qpon^
 ||fillthemap.com^
@@ -20366,13 +20408,11 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||financefear.com^
 ||financialwagerepel.com^
 ||finanvideos.com^
-||finchbouilli.com^
 ||find-girls-now.com^
 ||findbetterresults.com^
 ||findcompere.com^
 ||finderliminal.qpon^
 ||findingexchange.com^
-||findingviolon.shop^
 ||fine-response.pro^
 ||finemines.com^
 ||finessebaitsupply.com^
@@ -20385,6 +20425,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||finnedrepitchplanaru.cfd^
 ||finnocgrates.cfd^
 ||finreporter.net^
+||fiordtossingpenfold.cyou^
 ||fipphiany.com^
 ||fircaupbeats.cyou^
 ||fircokqe.com^
@@ -20459,6 +20500,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fjalsr83a6.com^
 ||fjcs5ly6l.com^
 ||fjisu.*/js/huimi.js
+||fjjdwjwtfnouy.website^
 ||fjlmcp.bajielm.com^$third-party
 ||fjlqqc.com/common/api/v1.0/slot-code/
 ||fjordsand.com^
@@ -20488,12 +20530,12 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fl4md7mm8.com^
 ||fl6n.com/adtop/
 ||fl7i15bxzr.com^
-||flabileamber.qpon^
 ||flaconquave.qpon^
 ||flagads.net^
 ||flairads.com^
 ||flairadscpc.com^
 ||flakyfeast.com^
+||flakygombay.cfd^
 ||flambeemienemptily.cyou^
 ||flameuncle.com^
 ||flandantardive.cyou^
@@ -20528,7 +20570,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fleraprt.com^
 ||flesherzhmudonycha.cfd^
 ||fleshlymaslin.qpon^
-||fleurypungy.cyou^
 ||flexlinks.com^
 ||flickerbridge.com^
 ||fliffuscatalpa.com^
@@ -20720,6 +20761,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||forbidcrenels.com^
 ||forcefulbeginning.com^
 ||forearmthrobjanuary.com^
+||forecarbromo.shop^
 ||forecasttiger.com^
 ||foredidkermis.qpon^
 ||foreignabnormality.com^
@@ -20786,7 +20828,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||foxlagoon.com^
 ||foxpush.io^
 ||foxtrotdata.com^
-||foxwoodtagetol.qpon^
 ||foyspolyzoataguan.cyou^
 ||fp.nanrenwo.net^
 ||fp2nn4zxlp.com^
@@ -20808,6 +20849,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fpgxyjv3h.com^
 ||fpnpmcdn.net^
 ||fpoyvjgdm.com^
+||fppvjmyh.com^
 ||fpriubpa.com^
 ||fprrpv.icu^
 ||fpyf8.com^
@@ -20897,6 +20939,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fregatabromoil.cyou^
 ||freighter-prod01.narvar.com^$image
 ||frendz4m.org/arlinablock.js
+||frenumshearth.shop^
 ||frenumsveined.cfd^
 ||frequentday.com^
 ||frequentflesh.com^
@@ -20937,7 +20980,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||frillyheat.pro^
 ||frimambeerstecture.qpon^
 ||fringesplasherbatteau.cyou^
-||friont.xyz^
 ||friseurataraxy.cfd^
 ||frisonschloss.cfd^
 ||frivol-ads.com^
@@ -21023,7 +21065,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ftqn9wedv.com^
 ||ftrfnx.icu^
 ||ftrgpdecexhzto.com^
-||ftrrhvgrgfaqx.site^
 ||ftv-publicite.fr^
 ||ftypvbzobezet.site^
 ||fuck-ads.vercel.app^
@@ -21098,6 +21139,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fusoidactuate.com^
 ||futaqcap.in^
 ||futbol24.com/kscms_asyncspc.php
+||futehee.qpon^
 ||futhacifl.com^
 ||futureads.io^
 ||futureus.com^
@@ -21186,6 +21228,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||fzddxwb7y3.com^
 ||fzev75-rtbix.top^
 ||fzhsrjgxnkisy.online^
+||fzioggf.com^
 ||fziydh0npy.com^
 ||fzkxfgpwfmafd.space^
 ||fzlol.com/images/$script
@@ -21435,6 +21478,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||gbeczyasqgajm.space^
 ||gbede.com^
 ||gbengene.com^
+||gbepetltlevbb.website^
 ||gbgpaffsfayqz.site^
 ||gbiltuj8w.com^
 ||gblcdn.com^
@@ -21444,7 +21488,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||gbpmiboyasz.com^
 ||gbrsocyqotw.com^
 ||gbymfijsetvta.website^
-||gcadhsxb.com^
 ||gcdn.2mdn.net^
 ||gcdviminadaubes.cyou^
 ||gcgytovigpfbx.online^
@@ -21606,7 +21649,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||gfan.com/press/
 ||gfblaghzk2.com^
 ||gfdfhdh5t5453.com^
-||gffggfxim.com^
 ||gfh9j4wyub.com^
 ||gfjfixuvixtup.site^
 ||gfkffnyncyicj.space^
@@ -21703,7 +21745,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ghjie.com/images/2012/images/bg
 ||ghjyw4h23.com^
 ||ghkkxenpclhlz.online^
-||ghoowvqf.com^
 ||ghost580.com/js/nei4.js
 ||ghostgenie.com^
 ||ghostnewz.com^
@@ -21778,6 +21819,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||girlieturtle.com^
 ||girls-games.org/bnr/
 ||girnalnemean.com^
+||girsedismays.cfd^
 ||gisantsdecourt.cyou^
 ||gitads.dev^
 ||gitalinnuance.com^
@@ -21914,7 +21956,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||glowingnews.com^
 ||glsfreeads.com^
 ||glssp.net^
-||glteqxwznvblf.site^
 ||glucatesubtile.cfd^
 ||glucideloggier.cyou^
 ||gluedpixel.com^
@@ -21943,6 +21984,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||gmbuluo.net/js/
 ||gmcztlbk9zu5negv6bxi.cfd^
 ||gmdyxrujbrbfn.space^
+||gmfddfrtsmjym.space^
 ||gml-grp.com^
 ||gmlcifodu.com^
 ||gmlhvrwopsiyh.site^
@@ -22083,6 +22125,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||godamanga.online/ad/
 ||goddedkrater.com^
 ||goddesslamps.com^
+||goddingbalizedaroo.cfd^
 ||godkc.com^
 ||godlessgirlsmoothly.com^
 ||godloveme.cn^
@@ -22281,7 +22324,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||gqvzsekxxsvlt.space^
 ||gqwu.cn^
 ||grabclix.com^
-||grablanguid.qpon^
 ||grabo.bg^$third-party
 ||gracefulmilk.com^
 ||graduate59.com^
@@ -22321,6 +22363,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||grayriancyjar.qpon^
 ||grayscaleart.com^
 ||graywords.net^
+||grazedmauts.shop^
 ||grazingmarrywomanhood.com^
 ||grbwxqkvbmwnq.online^
 ||grcabrvjhjdtm.website^
@@ -22357,7 +22400,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||grescotuit.cfd^
 ||gresrv.com^
 ||grewiabromus.com^
-||greyflyenmesh.shop^
 ||greygrid.net^
 ||greyinstrument.com^
 ||greystripe.com^
@@ -22388,6 +22430,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||gripspigyard.com^
 ||grixix.com^
 ||grizaqtzuwaz.in^
+||grmazkqokosxm.space^
 ||grmpeyjzuqibv5jygvzf.rest^
 ||grmpxwtgdspjk.online^
 ||grmtas.com^
@@ -22719,6 +22762,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||gxnpgk3vtf679fh8ej4q7.cfd^
 ||gxobicxhusdnt.space^
 ||gxqzz.7766.org^
+||gxteysujhcypg.online^
 ||gxvf.cn^
 ||gxwjm9n447l8rgpi.cfd^
 ||gxxtky.com/js/p.js
@@ -22836,6 +22880,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||hailsprahus.shop^
 ||hainantopkickcootie.cfd^
 ||hairoak.com^
+||hairpincryste.shop^
 ||haishuxs.com/js/
 ||haitang77.com^$third-party,script
 ||haiversirkar.cfd^
@@ -22868,7 +22913,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||hammerhearing.com^
 ||hammilykalasieridged.cyou^
 ||hammockoxazin.shop^
-||hammocksmellie.cyou^
 ||hamropatro.com/images/rotating-ads/
 ||hamsterspot.com^
 ||hanceddomptjewels.cyou^
@@ -22954,11 +22998,9 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||harborcaption.com^
 ||harborcontrol.com^
 ||harborcub.com^
-||harborfluorin.cfd^
 ||harborjavgg124.fun^
 ||harbour47.com^
 ||hardcoretrayversion.com^
-||hardenlymphy.shop^
 ||hardexpendstrategy.com^
 ||hardwarezone.com.sg/ads/ad_site_notice.js
 ||hardwarezone.com.sg/js/hwz/hwz_gam_f.js
@@ -22990,6 +23032,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||haspingplovers.cfd^
 ||hastifsaveypiecers.cyou^
 ||hatagashira.com^
+||hatchord.com^
 ||hateful-medium.pro^
 ||hatefulrequest.com^
 ||hatsseedier.shop^
@@ -23077,6 +23120,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||hdmoli.pro/a_d/
 ||hdmovieverse.site/wp-content/plugins/adblock-detector/adblock-detector.js
 ||hdmp4.cc/js/foot.js
+||hdo0zseqy.com^
 ||hdpornfree.xxx/sup/*.js
 ||hdqtevaaenn.com^
 ||hdsky.me/adv/
@@ -23198,6 +23242,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||heratheacle.com^
 ||herbmancubeb.shop^
 ||herculean57.com^
+||herderanury.cyou^
 ||heresanothernicemess.com^
 ||heretopgirls.net^
 ||herjmttufhptm.online^
@@ -23423,6 +23468,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||hkjunkcall.com/images/b_banner_
 ||hkmte.com/seo.js
 ||hko7xcemkfzl4uwo.rest^
+||hkoosgxqn.com^
 ||hkplzozwl.com^
 ||hkq1b3v4wiwzo9zi77.cfd^
 ||hkrpmavrbw.com^
@@ -23533,6 +23579,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||holder.com.ua^
 ||holdergroset.cfd^
 ||holdingwager.com^
+||holierjezails.shop^
 ||holiesforgrow.cyou^
 ||holloainnyardklans.cfd^
 ||hollow-population.pro^
@@ -23563,6 +23610,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||honkeyajhar.cfd^
 ||honorablehydrant.com^
 ||honorableland.com^
+||honouredphrasemildly.com^
 ||honoursdashed.com^
 ||hoo1luha.com^
 ||hoodedhokumsmealier.cyou^
@@ -23757,7 +23805,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||htdvt.com^
 ||hthelulyq.com^
 ||htintpa.tech^
-||htjchtyeyjluw.site^
 ||htjs.demshen.com^$~third-party
 ||htl.bid^
 ||htlbid.com^
@@ -23816,7 +23863,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||hufacrptijg.com^
 ||huffson-delivery.com^$third-party
 ||huffyteraohm.qpon^
-||hugecuspsdeform.qpon^
 ||hugeedate.com^
 ||hugfromoctopus.com^
 ||huggingmixhill.qpon^
@@ -23934,6 +23980,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||hwddqhhsze.com^
 ||hwktbqcrggcmm.website^
 ||hwpnocpctu.com^
+||hwpvogedpmyuy.space^
 ||hwrzdbokzdttry.com^
 ||hwzuwlghfqizh.space^
 ||hx1.tubepornbase.com^
@@ -24166,7 +24213,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||idavmk1276.com^
 ||idcot.com^
 ||ideaedlabiamettles.cfd^
-||ideahealkeeper.com^
 ||idealjav09212026.shop^
 ||idealmedia.io^
 ||ideng.com^$third-party
@@ -24316,7 +24362,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||iiwlirgydeexl.online^
 ||iiwvrnwxtr.com^
 ||ijdapeblkrjiq.website^
-||ijdfchxgvhxvf.com^
 ||ijinshan.com/images/gk/game
 ||ijj161xjtohopxh33h7y1ryiub.cfd^
 ||ijkipazxsmzgc.website^
@@ -24340,6 +24385,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ikmmigvehmod.com^
 ||ikoxmfjaxqbox.com^
 ||ikronzealu.com^
+||ikscwzjgxpeqy.site^
 ||ikstatic.cn^*.gif
 ||iktfggmhqf.com^
 ||ikuailian.com^$third-party
@@ -24564,7 +24610,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||impactradius.com^
 ||impactserving.com^
 ||impactslam.com^
-||impalmpannebotulin.cfd^
 ||imparteconocimientos.com/recursos/Anti-AdBlocker.js
 ||impartial-arrival.com^
 ||impartial-tough.pro^
@@ -24572,6 +24617,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||impartialpath.com^
 ||impassableoffend.com^
 ||impassableretainerexplained.com^
+||impassioned-boat.pro^
 ||impbid.com^
 ||impdsp.meituan.com^
 ||impeccablebrain.pro^
@@ -24660,7 +24706,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||incorppitfold.shop^
 ||increaserev.com^$third-party
 ||incubation95.top^
-||incusesinstars.shop^
 ||incussdebaser.cfd^
 ||inczeyagnj.com^
 ||indefinitelytonsil.com^
@@ -24687,6 +24732,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||infantileclass.pro^
 ||infantilecombination.com^
 ||infantiletransition.com^
+||infectshrimpi.cfd^
 ||infectswheeze.cfd^
 ||infeebasr.com^
 ||infilebivial.shop^
@@ -24896,7 +24942,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||interviewdigress.com^
 ||interworksmedia.co.kr^$third-party
 ||inthralsaltmanmino.cyou^
-||inticedrooled.qpon^
 ||intimastrust.qpon^
 ||intimatediary.com^
 ||intimidatingsideway.com^
@@ -24947,6 +24992,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||iodideschazzen.qpon^
 ||iodidesmamaloi.cyou^
 ||iodohotfoot.cyou^
+||iofpjjvrnm59jpnq6862f.rest^
 ||iogjhbnoypg.com^
 ||iohqwaarinkpi.site^
 ||ioiruucbxpcnm.website^
@@ -25089,7 +25135,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||it165.net/index.php?m=poster&
 ||it3c4jmx.xyz^
 ||it610.com/views/front/js/special/
-||itacistdirndl.cyou^
 ||itad.linetv.tw^
 ||itadapi.ithome.com.tw^
 ||itaibiscot.cfd^
@@ -25236,7 +25281,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ixyamnenffvb.com^
 ||iy.com.cn^$third-party
 ||iy0keh7qj7.com^
-||iyarvira.cfd^
 ||iyes.youku.com^
 ||iyf.tv/a/$xmlhttprequest
 ||iyf.tv/play/$xmlhttprequest
@@ -25309,9 +25353,11 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||jabwahehe.cfd^
 ||jackaltimer.com^
 ||jackao.net^
+||jacketzerobelieved.com^
 ||jackknifemonuments.com^
 ||jackpotcitycasino.com/*&a=
 ||jacksonbateaux.com^
+||jadehlbswdlqw.online^
 ||jadeitite.com^
 ||jaderooster.com^
 ||jads.cc^
@@ -25322,6 +25368,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||jaimbai2b1.com^
 ||jaimeecartebung.qpon^
 ||jaixajhu.com^
+||jakrkwyjptezk.site^
 ||jakxs.net/themes/jieqi/wap/js/*fix
 ||jakxs.net/themes/jieqi/wap/js/test.js
 ||jalkarsontag.cyou^
@@ -25499,11 +25546,13 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||jfxefv.icu^
 ||jg0y00ciyr.com^
 ||jg1668.com^$third-party
+||jgafrwlycdgtv.site^
 ||jgid.cn^
 ||jgjduiropn.com^
 ||jgo1pcbx9.com^
 ||jgpo1zqhj.com^
 ||jgqpddekjd.com^
+||jgrjauxhvhbas.website^
 ||jgstny.com^$third-party
 ||jgwrdbgzpgugv.space^
 ||jgxwygojvlioc.space^
@@ -25523,6 +25572,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||jhoqgfgm.com^
 ||jhpqntyyeezpds.com^
 ||jhtizlkgthutl.site^
+||jhu8u9.pro^
 ||jia.com/js/common/article_home_adv.js
 ||jia183d6v.com^
 ||jialingmm.net/dm/tj.js
@@ -25547,6 +25597,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||jiaqvigtlyvjgr.com^
 ||jiasule.com/static/js/http_error.js
 ||jiayu.net/comiis_ad/
+||jibbashacked.qpon^
 ||jibenyyr.*/tj.js
 ||jibn12.jintang114.org^
 ||jibxceatwdcbr.online^
@@ -25715,6 +25766,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||joemonster.org/build/js/prebid_*.js
 ||joesojwvykmdi.com^
 ||joeyesfavn.cfd^
+||jofyaljkygvbqh.com^
 ||joggingavenge.com^
 ||johojima.com/wp-content/uploads/*/bn_*.jpg
 ||johojima.com/wp-content/uploads/*/bnr_*.jpg
@@ -26007,7 +26059,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||jtkbsquyfvpt.com^
 ||jtlovmkxtsj.com^
 ||jtpvecghbpijs.online^
-||jtwrnuerxoycv.space^
+||jtxlzsuxadaxe.site^
 ||jtzqhxtutqzfze.com^
 ||jtzyk9iypb.com^
 ||juandou.com^$third-party
@@ -26126,6 +26178,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||jwt18trhq.com^
 ||jwtnkxjxyphes.site^
 ||jwu6u39qc8ezgg71v.cfd^
+||jwuoflnhia.in^
 ||jwyheqavvgolm.website^
 ||jx3.freepornobook.com^
 ||jxad.jx163.com^
@@ -26278,7 +26331,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kanyingv.com/statics/js/ky*.js
 ||kaolinoleous.com^
 ||kaornizdcf.com^
-||kaotic.com/templates/*/static/player/video.js/videojs-vast-
 ||kaoyan1v1.com/IAA/
 ||kapeikakahaulackeys.cfd^
 ||kapqttkkorg.com^
@@ -26310,9 +26362,9 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kayege.org/js/
 ||kayosgluttonclean.cyou^
 ||kayzen.io^
+||kaztuxcaw.in^
 ||kb-render.alicdn.com/html/*.html
 ||kb894lngt.com^
-||kbao7755.de^
 ||kbjgwaixnlrel.online^
 ||kbkvmeg.com^
 ||kbkyvwakcqgsw.online^
@@ -26356,6 +26408,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kedou*.com/layer/layer.js
 ||keekedlegman.cyou^
 ||keelerimponediety.cyou^
+||keelfifteen.qpon^
 ||keelingchiming.cyou^
 ||keenmagwife.live^
 ||keenquill.com^
@@ -26398,6 +26451,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kernh41.com^
 ||kernossmrgs.qpon^
 ||kerot.xyz^
+||kerriaarticle.cfd^
 ||kerryfluence.com^
 ||kertzmann.com^
 ||kesevitamus.com^
@@ -26431,10 +26485,10 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kfc.com.cn^$domain=iqiyi.com
 ||kfcddnruqoyhix.com^
 ||kfchaqjfpugaf.online^
+||kfcupwsdhu.com^
 ||kfdjjedtasohc.website^
 ||kfdpzjytelqcd.website^
 ||kffrbabivwwpskn.com^
-||kfiqxtcuthefp.online^
 ||kfjbitxzlhijfcenxejc.top^
 ||kfjhd.com^
 ||kflnfccqidisy.online^
@@ -26458,6 +26512,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||khakiroute.cyou^
 ||khalifabranlesoversum.qpon^
 ||khamipam.cyou^
+||khankahyeolockyer.cyou^
 ||khatmaulana.qpon^
 ||khatrisleigh.cyou^
 ||kheejcqnll.com^
@@ -26494,6 +26549,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kilergghettos.cfd^
 ||kilerghairnet.qpon^
 ||kiliareorangssqueam.cyou^
+||kilojaya.com^
 ||kiltedtuesday.cfd^
 ||kimberlite.io^
 ||kimmorisked.cfd^
@@ -26548,6 +26604,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kiyfzrkgevxcc.online^
 ||kj4gddo30.com^
 ||kje9v2ic57.com^
+||kjevtkfxscnal.site^
 ||kjewt01aa.com^
 ||kjhrpmhltfv.com^
 ||kjkavoimtxart.online^
@@ -26599,7 +26656,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kltjbnfjmnh.com^
 ||kltzthsxrdsug.website^
 ||kluckerkalysis.qpon^
-||klutzestiming.com^
 ||klvadvvrbusee.website^
 ||klyaryibsa.com^
 ||km.adsdomaintracking.com^
@@ -26823,6 +26879,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kuku99.com^$third-party
 ||kulmetmincio.cfd^
 ||kulroakonsu.net^
+||kultursrazzingahuula.qpon^
 ||kumo.network-n.com^$third-party
 ||kumphurwyr.com^
 ||kumpulblogger.com^
@@ -26850,6 +26907,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||kviyxkktoeuxx.com^
 ||kvjjcjodxbkqp.online^
 ||kvno4qgv8n.com^
+||kvob6ulzz5n7gmpji7wn4j.rest^
 ||kvsadman.com^
 ||kvtfmgwhiued.com^
 ||kvvusehggwptc.website^
@@ -27020,6 +27078,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||lankyteaching.com^
 ||lanmeifeel.xyz^
 ||lanmxf.icu^
+||lanpeatced.com^
 ||lanrenzhijia.com/Public/images/head_right_top.gif
 ||lanrenzhijia.com/Public/images/sucaihuo_
 ||lanrenzhijia.com/Public/images/xiaozhua.jpg
@@ -27057,7 +27116,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||lasciviouschristmasinfection.com^
 ||lasereither.com^
 ||lassampy.com^
-||lassoedninos.shop^
 ||lastanonymous.com^
 ||lasttaco.com^
 ||latahvinea.cfd^
@@ -27081,6 +27139,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||launchermsg.3g.cn/golaunchermsg/advservice.do
 ||launchjack.com^
 ||laundry76.top^
+||lauterbumbles.cfd^
 ||lautercompile.shop^
 ||lavaretfixings.cfd^
 ||lavatorydownybasket.com^
@@ -27103,6 +27162,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||laxativethem.com^
 ||laxismbirdmen.cfd^
 ||laxistguttule.shop^
+||laxityblames.cfd^
 ||laxsqiibtpijk.site^
 ||laxyhlfqefjyi.website^
 ||layer-ad.org^
@@ -27229,6 +27289,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||legacyclerkbuffin.cyou^
 ||legal-necessary.pro^
 ||leggedgoajiro.shop^
+||leggieruncrest.qpon^
 ||legislator85.top^
 ||legowirjzjpra.online^
 ||lehfnkboxqhrowt.com^
@@ -27404,6 +27465,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||lidsaich.net^
 ||lidsnestles.cyou^
 ||liedloopful.com^
+||liedpalolo.cfd^
 ||lieforepawsado.com^
 ||liegelygosport.com^
 ||liegelygothism.shop^
@@ -27581,6 +27643,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||lixir.wargers.org^
 ||lixiviagrex.cfd^
 ||lizardcalming.cyou^
+||lizardposit.com^
 ||lizardslaugh.com^
 ||lizebruisiaculi.info^
 ||lj43bm3y8.com^
@@ -27672,14 +27735,17 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ln.tian-ting.ink^
 ||lnabew.com^
 ||lnbqvaoxbhkze.website^
+||lndiikqekcqar.space^
 ||lndpy.com^
 ||lnecjgfxtmyul.online^
 ||lnfmhl.icu^
+||lngacmuw.com^
 ||lnhsjob.com^$third-party
 ||lnk8j7.com^
 ||lnkgt.com^
 ||lnme1q1qa.com^
 ||lnqcfsnncjubr.space^
+||lntpocv7tkt7xbvm9p61.rest^
 ||lnwnpjmyugpvl.site^
 ||lnxjhesfdmuyq.online^
 ||lnyupxlxqv.com^
@@ -27770,6 +27836,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||loganmedia.mobi^
 ||logarithm29.top^
 ||loggierbidri.cyou^
+||logicaldietherpeglike.cyou^
 ||logicalminds.net^
 ||logicdate.com^
 ||logicschort.com^
@@ -27865,6 +27932,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||loperbrattle.com^
 ||lopersmacabi.cyou^
 ||lophiiderugate.cfd^
+||lophineoutsayresave.cyou^
 ||lopsideddebate.com^
 ||loquatsbilker.cfd^
 ||lordofads.com^
@@ -27900,6 +27968,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||loverevenue.com^
 ||loveseashore.com^
 ||loveshang.com/api.php?mod=ad&adid=custom_
+||loveyoudatee.com^
 ||loving-link.com^
 ||lovrsdate.com^
 ||loweiteserdabsquieta.qpon^
@@ -27983,6 +28052,8 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||lsvvccoqwylrg.website^
 ||lt3f9p5ox2.com^
 ||ltadmycmy.com^
+||ltarebldw.com^
+||ltbbjzwmdavdny.com^
 ||ltbyw.top/data/images/*.gif
 ||ltfcagrapl.com^
 ||ltiekurv.com^
@@ -28018,7 +28089,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ludicrousarch.com^
 ||lufgukvh.in^
 ||lugingbirthed.shop^
-||luhingamulches.qpon^
 ||luiz.lgaadvs.com.br^
 ||luljmaambnzkd.website^
 ||lumaktoys.com^
@@ -28047,6 +28117,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||lupercigoa.cfd^
 ||lupinesspale.cyou^
 ||lupon.media^
+||lurdansanomaly.shop^
 ||luronews.com^
 ||lushcrush.com^
 ||lushedfurlan.cyou^
@@ -28086,7 +28157,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||lvb84t963m77n7g6b9pp.cfd^
 ||lvdvltsid.com^
 ||lvesfrucnt.com^
-||lvojijsguhs.com^
 ||lvsdqnuivyedd.website^
 ||lvse.cn/output/block/html/
 ||lvse.com/9
@@ -28130,6 +28200,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||lx5.homeporntuber.com^
 ||lxadqdidnsnzd.online^
 ||lxapk.com/wp-content/uploads/*.gif
+||lxgiykiqe.com^
 ||lxiuhfmibptqt.space^
 ||lxkiqokunemfn.space^
 ||lxpgll.icu^
@@ -28161,6 +28232,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||lyricslocusvaried.com^
 ||lysateseagres.shop^
 ||lysq.com/data/attachment/portal/
+||lyswbpryuotvs.space^
 ||lywww.com/data/js.php?id=
 ||lywww.com/header_pic.php
 ||lyz.radio366.com^
@@ -28401,7 +28473,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||mahuashu.com/entry.js
 ||maiche.com/iframe/rank.html
 ||maideatp.com^
-||maielxofuucjg.online^
 ||mail-ads.google.com^
 ||mail.adswt.com^
 ||mail.aol.com/d/gemini_api/?adCount=
@@ -28611,7 +28682,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||marsnextdoor.com^
 ||martelacquestcarnify.cfd^
 ||martted.com^
-||martuupanaya.shop^
 ||marvywaled.qpon^
 ||marzaent.com^
 ||masadora.net/kakusan-
@@ -28674,6 +28744,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||maturechair.pro^
 ||matwbp.iask.sina.com.cn^
 ||maulersoutgaze.qpon^
+||mavisesdogskin.qpon^
 ||mavisespiend.qpon^
 ||mavq.net^
 ||mavrtracktor.com^
@@ -28806,6 +28877,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||measureadv.com^
 ||measuringrules.com^
 ||meatabdicatedelicatessen.com^
+||meatdownsscalage.qpon^
 ||meatsalanyls.cfd^
 ||meatydime.com^
 ||mechanicallydrug.com^
@@ -29153,6 +29225,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||mildersieging.cfd^
 ||mildgive.com^
 ||mileporn.com^
+||milerfixures.com^
 ||milffox.com/ai/
 ||milffox.com/sum.js
 ||milimili.tv/js/loadjs/jquery
@@ -29167,6 +29240,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||millsuspect.com^
 ||millswell.com^
 ||millustry.top^
+||milpascreek.qpon^
 ||miltingtuchitanthill.cfd^
 ||miluwo.com^
 ||mima.club/tuijian/speedtest/
@@ -29237,6 +29311,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||mistellovigermvalse.cyou^
 ||misterbangingfancied.com^$third-party
 ||mistervillas.com^
+||mistimetearbaclin.cyou^
 ||mistyhorizon.com^
 ||mistysteel.co^
 ||misweenownself.com^
@@ -29487,7 +29562,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||momoshop.com.tw/league/$domain=beephone.com.tw
 ||momotrk.com^
 ||momrollback.com^
-||momusesconrail.cyou^
 ||momvids.com/player/html.php?aid=
 ||monacobeatles.com^
 ||monadplug.com^
@@ -29579,6 +29653,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||morestamping.com^
 ||moricecojurorapneic.cfd^
 ||morordermal.com^
+||mortarsawonder.cyou^
 ||mortarscrista.cfd^
 ||mortgage.leads360.com^
 ||mortgagecentres.net/banner.gif
@@ -29851,11 +29926,14 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||muskedtrefah.qpon^
 ||mussingsucrasetreron.cfd^
 ||musterscoyedroomed.qpon^
+||mustierdeeper.qpon^
 ||mustymix.com^
+||mutamusit.com^
 ||mutedpoetry.com^
 ||mutedxiphias.cyou^
 ||muteknife.com^
 ||mutemailbox.com^
+||mutenessdollyheadlong.com^
 ||mutinedgunster.com^
 ||mutswisheslazaret.cyou^
 ||mutterschokervivary.qpon^
@@ -29909,6 +29987,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||mx6.3pornhere.com^
 ||mxaserver.mxplay.com^
 ||mxauvrtdm.com^
+||mxnsdgojduycx.online^
 ||mxptint.net^
 ||mxqrwohczgqlt.space^
 ||mxvckyokosodd.space^
@@ -30057,6 +30136,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||n0633.com^
 ||n0644.com^
 ||n0zwlat83.com^
+||n12rk1r9h.com^
 ||n1307adserv.xyz^
 ||n152adserv.com^
 ||n161adserv.com^
@@ -30093,6 +30173,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||n8g1kvtmrf.com^
 ||n906n29tm.com^
 ||n91hg.com^
+||n9s74npl.de^
 ||naarnurm.com^
 ||nabauxou.net^
 ||nabbr.com^
@@ -30141,7 +30222,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||nanfengyl.com/static/js/zdad.js
 ||nangacouldntsowback.cfd^
 ||nanigans.com^
-||nankinprigssavarin.cfd^
 ||nannvshuo.com^
 ||nannyirrationalacquainted.com^
 ||nannypromove.cyou^
@@ -30153,6 +30233,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||nap5k.com^
 ||napbuskaafntph.com^
 ||naperyumlauts.cfd^
+||nappediaxialtariqat.qpon^
 ||nappyattack.com^
 ||nappyneck.com^
 ||nappyonsetstiffness.com^
@@ -30242,7 +30323,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ncpzxnoqjjdqw.website^
 ||ncqwqvelogyba.space^
 ||ncrodwckimzgq.space^
-||nctksllzwpaci.online^
 ||nczsks.com/SCWB/WebResource.axd
 ||nczxbvlnxudvv.site^
 ||ndbgngx6m.com^
@@ -30357,7 +30437,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||netcpms.com^
 ||netded.com/templets/gfan/js/global.js
 ||netease.com/house-public/articleyunyans.js
-||netebestridbusing.cfd^
 ||neterbarit.com^
 ||netflavns1.com/assets/jquery/app0.
 ||netinsight.co.kr^$third-party
@@ -30447,6 +30526,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||newstemptation.com^
 ||newsuggest.com^
 ||newsunads.com^
+||newsvot.com^
 ||newswhose.com^
 ||newsyour.net^
 ||newt.javier.dev^
@@ -30463,7 +30543,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||next-lust.cfd^
 ||nextacdn.com^
 ||nextacdn.top^
-||nextclass.pro^
+||nextclick.pl^$third-party
 ||nextinpact.com/assets/images/autopromo-adblock-1280.jpg
 ||nextkalam.qpon^
 ||nextmeon.com^
@@ -30511,7 +30591,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ngrikewslmhsa.website^
 ||ngvrtj.icu^
 ||ngvvzcemgmucl.space^
-||ngxabwgiatjdt.com^
 ||ngxrirfmawbd.com^
 ||ngygalitlv.com^
 ||ngyoawu.icu^
@@ -30534,6 +30613,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||nhzchcpfdgbnm.website^
 ||nhzylwcpmcchb.space^
 ||ni8b5yobfth1eebp.cfd^
+||niatachang.shop^
 ||nibbanadesmid.qpon^
 ||nibbedcorf.shop^
 ||nibbedizing.qpon^
@@ -30634,6 +30714,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||njdwxxyem.com^
 ||njffrwnoecp2t4.rest^
 ||njhlvz.icu^
+||njibcaxlfwh.com^
 ||njnxguvbxlvbtj.com^
 ||njoyk5h8e4brtxnot79x88jmr5jh.rest^
 ||njpilt.icu^
@@ -30690,6 +30771,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||nnamobkfagxaq.com^
 ||nneephon.com^
 ||nneyjpvucjkug.online^
+||nngbfvlqkyunr.space^
 ||nnidobzroskbh.site^
 ||nniksvbsaobu.com^
 ||nnm-club.ws/forum/docs/requests.js
@@ -30705,7 +30787,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||no2veeamggaseber.com^
 ||noagentfees.com^$subdocument,domain=independent.com.mt
 ||noavoahevugrib.com^
-||nobberarrie.qpon^
 ||noblecables.com^
 ||noblefellow.com^
 ||noblemangetawayeclipse.com^
@@ -30797,6 +30878,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||novipnoad.com/bd/
 ||novipnoad.com/theme/js/helper.
 ||novipnoad.net/theme/js/sponsor/
+||novitrk1.com^
 ||novitrk7.com^
 ||novitrk8.com^
 ||novostimira.biz^
@@ -30886,6 +30968,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ntwkbc42.com^
 ||ntykiftp.in^
 ||nucelliscreaky.qpon^
+||nuchaorb.cfd^
 ||nuclearads.com^
 ||nucleindinkly.com^
 ||nucleo.online^
@@ -31003,6 +31086,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||nyhhwhokdnibh.online^
 ||nyhopgjjlgmyo.space^
 ||nylons-porno.com/poj/
+||nymphadustbox.qpon^
 ||nymphszymosis.qpon^
 ||nynlbkolof.com^
 ||nyokruzoir.com^
@@ -31093,7 +31177,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||oarweedtaigas.cfd^
 ||oassackegh.net^
 ||oathayretint.cyou^
-||oatlandanet.cyou^
 ||oauarrbzxmhbs.space^
 ||oavqowdsenguy.online^
 ||oavsgdmtbealk.website^
@@ -31260,6 +31343,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||offshuppetchan.com^
 ||offspringthisscarcely.com^
 ||ofgsqic.cn^$~third-party
+||ofhkcsf.com^
 ||ofhypnoer.com^
 ||ofjamkwak.com^
 ||ofjfztoqeyzpj.space^
@@ -31292,6 +31376,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ogfna.net^
 ||oghfcghsr.com^
 ||oghqvffmnt.com^
+||ogivalummmaugis.qpon^
 ||oglalavoodoo.world^
 ||ogle-0740lb.com^
 ||ognovtfu.in^
@@ -31302,7 +31387,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ogrismtouched.cyou^
 ||ogtrk.net^
 ||ogvnjrogfmglm.website^
-||ogwjcrwlwacxrny.com^
 ||ogxrnlidijwxg.website^
 ||ogyxrcdyatgus.online^
 ||ogzkaplivkku.in^
@@ -31404,6 +31488,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||oljqmw.icu^
 ||ollpepwgm.com^
 ||ollsok.icu^
+||olluckoristic.com^
 ||olmsoneenh.info^$domain=avgle.com
 ||olopisotmvkug.site^
 ||olopruy.com^
@@ -31571,7 +31656,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||op9dbh1i0.com^
 ||opacitypekans.qpon^
 ||opalquill.com^
-||opdcsybfrohg.com^
 ||opdwwovuhiapk.online^
 ||open.e.kuaishou.cn^
 ||open.e.kuaishou.com^
@@ -31630,8 +31714,8 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||optidownloader.com^
 ||optiklink.com/arlinablock.js
 ||optimallimit.com^
-||optimisticcapital.pro^
 ||optimizer.apiswidget.com^
+||optimizesocial.com^
 ||optimizesrv.com^
 ||optinmonster.com^$third-party
 ||optionsnomad.com^
@@ -31676,6 +31760,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||oraubsoux.net^
 ||orbbanate.qpon^
 ||orbit-cdn.xyz^
+||orbit-static.click^
 ||orbit-static.xyz^
 ||orbitcarrot.com^
 ||orbiteleveed.com^
@@ -31783,6 +31868,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||otaserve.net^$third-party
 ||otbuzvqq8fm5.com^
 ||otcash.com/images/
+||otcgjfkmkwwcu.site^
 ||otclick-adv.ru^
 ||otdzhrgyd.com^
 ||otgihnae.com^
@@ -31913,14 +31999,12 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ovlfuwrcekghx.site^
 ||ovmwaehsvypnq.space^
 ||ovonicscalumetdiquat.cyou^
-||ovonicsisamine.qpon^
 ||ovrgackuno.in^
 ||ovsdewncmuwvt.online^
 ||ovuleslinnets.shop^
 ||ow5a.net^
 ||owbltnxzgxq.com^
 ||owdgoibugobita.com^
-||owdkghznkkocb.online^
 ||owemcnw.com^
 ||oweqehfrmrlfm.space^
 ||owkdelaw.cfd^
@@ -31952,6 +32036,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||oxbbzxqfnv.com^
 ||oxcqyluashpvr.website^
 ||oxdewajpuichn.space^
+||oxgfheakkam.in^
 ||oxggiwdp57.com^
 ||oxhealraidketatin.qpon^
 ||oxidatesnod.shop^
@@ -32058,6 +32143,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||p8lxfvgnj426gpeemu5k6t.rest^
 ||p8u.hinet.net^
 ||p99c3kwxg.com^
+||p9pxgx91z15el4b32ecfxo1yvi.cfd^
 ||pa026n1waq.com^
 ||pa5ka.com^
 ||paa-reporting-advertising.amazon^
@@ -32099,6 +32185,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||pagejunky.com^
 ||pagerrentablespotlight.com^
 ||pagerschinois.cfd^
+||pagerstomas.cfd^
 ||paht.tech^
 ||pahtbt.tech^
 ||pahtdz.tech^
@@ -32269,6 +32356,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||passingthoughtfully.com^
 ||passion-industry-game.com^
 ||passirdrowns.com^
+||passivealexis.com^
 ||passivepolo.com^
 ||passkeymomento.cyou^
 ||passtechusa.com^
@@ -32376,6 +32464,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||pchome.com.tw/iframe/$domain=mail.pchome.com.tw
 ||pchome.com.tw/js/overlay_ad.js
 ||pchome.net/flow.php
+||pchxdjwzgxgfb.website^
 ||pcidcacaroff.in^
 ||pcimbyicebtyeuw.com^
 ||pcktmkfjnkfqm.club^
@@ -32475,6 +32564,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||pemsrv.com^
 ||penbardvenatic.qpon^
 ||pencild4.com^
+||pendentheddles.shop^
 ||pengtu.cc^*.png
 ||pengwei168.com/addons/321.gif
 ||pengwei168.com/template/stui_tpl/html/vod/f.js
@@ -32545,7 +32635,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||permissslanged.cyou^
 ||pernineatwindazotea.qpon^
 ||perninescrees.qpon^
-||pernyiunlatch.cyou^
 ||peronetonkin.cfd^
 ||perpenttrilli.cfd^
 ||perryvolleyball.com^
@@ -32768,7 +32857,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||pightpolkagargle.cyou^
 ||pigment-adv.co.il^
 ||pigmentpaper.com^
-||pigrootbld.shop^
 ||pigtre.com^
 ||pigwashoutwash.qpon^
 ||pihu.xxxpornhd.pro^
@@ -32995,6 +33083,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||plebekhanda.qpon^
 ||plecnyz.icu^
 ||plectrum53.top^
+||plenomedia.com^
 ||plentyhelium.com^
 ||pleopodmostra.cyou^
 ||plexop.net^
@@ -33118,6 +33207,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||polarichip.com^
 ||polarmobile.com^
 ||polatads.com^
+||polearmpvt.shop^
 ||poletbgulpers.cyou^
 ||poleynsset.com^
 ||polished-hook.com^
@@ -33145,6 +33235,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||polygon58.top^
 ||polyh-nce.com^
 ||polymorphicads.jp^
+||polypedyirds.shop^
 ||polyzoaalkenna.cfd^
 ||pomatoapheticfindal.cfd^
 ||pomdjvfzinqft.website^
@@ -33309,6 +33400,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||potatoinvention.com^
 ||potawe.com^
 ||potboilexedrae.cfd^
+||poteyebullae.shop^
 ||potholeresumer.cfd^
 ||pothutepu.com^
 ||potliketete.cfd^
@@ -33471,8 +33563,10 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||previousplayground.com^
 ||prevoidwhopper.shop^
 ||prf.hn^$third-party
+||prfbwjonfameiu.com^
 ||prfctmney.com^
 ||prfwhite.com^
+||prholuhyzkeea.site^
 ||prias.everydayporn.com^
 ||price.com.hk/dfp_price.php?
 ||price.com.hk/ec-discuss-widget.php
@@ -33608,6 +33702,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||promontory32.com^
 ||promos.camsoda.com^
 ||promos.fling.com^
+||promote.pair.com/88x31.pl
 ||promoteconditionerkeyboard.com^
 ||promoted.sndcdn.com^
 ||promoted.soundcloud.com^
@@ -33634,7 +33729,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||propertypotato.com^
 ||propgoservice.com^
 ||prophetalongconstituent.com^
-||propomagrouseardass.cfd^
 ||proponekindleddaphnid.cyou^
 ||propositionpower.com^
 ||proppellerads.ru^
@@ -33646,6 +33740,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||prosifycoifspunched.qpon^
 ||prosperent.com^
 ||prospershave.com^
+||prossbiacuru.shop^
 ||prosumsit.com^
 ||protagcdn.com^
 ||protally.net^
@@ -33707,6 +33802,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||psauwaun.com^
 ||pschenttidier.com^
 ||psdovpvghfphju.com^
+||pseavibrsijgx.site^
 ||psedwm.com^
 ||psegeevalrat.net^
 ||psf805.xyz^$~third-party
@@ -33778,6 +33874,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ptwmcd.com^
 ||ptwmemd.com^
 ||ptwmjmp.com^
+||ptwmstcnt.com^
 ||ptxcfn.icu^
 ||ptyalinbrattie.com^
 ||ptyceotacvpon.site^
@@ -33971,6 +34068,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||pushtorm.net^
 ||pushub.net^
 ||pushwelcome.com^
+||pushydress.pro^
 ||pushyimmaculateinestimable.com^
 ||pusishegre.com^
 ||pusqfnqjeekvd.website^
@@ -34162,6 +34260,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||qeukqwbcbhgku.online^
 ||qezkdby1jj.com^
 ||qf51ho9qtz.com^
+||qf7fj5k1569ll8xrohk7f.cfd^
 ||qfanyeojjmkmw.online^
 ||qfcgiittmvnin.online^
 ||qfeoczxr.com^
@@ -34173,7 +34272,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||qgerxdslrxjho.site^
 ||qgfzb.com^$~third-party
 ||qgreedreau.com^
-||qguveforyqxvm.space^
 ||qguwoq.cn^$third-party
 ||qgvvtce98.com^
 ||qgxbluhsgad.com^
@@ -34341,6 +34439,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||qoa0vy22fy.com^
 ||qoaaa.com^
 ||qoannfrwdwifv.site^
+||qogwouozyuwqe.website^
 ||qokzrwccbilzz.website^
 ||qooohwwd.xyz^
 ||qoqv.com^
@@ -34488,6 +34587,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||questionmarket.com^
 ||quetschanise.qpon^
 ||quetwalty.qpon^
+||queueolives.cfd^
 ||quge5.com^
 ||quge66.com/jdjd/
 ||quickads.net^
@@ -34502,7 +34602,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||quickwittedfeedback.pro^
 ||quiet-assets.xyz^
 ||quietknowledge.com^
-||quietlythough.com^
 ||quilladot.org^
 ||quillkick.com^
 ||quiltquick.com^
@@ -34565,12 +34664,14 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||qwiudbnaiio.com^$third-party
 ||qwnncqysovvjth.com^
 ||qwnzzp50x.com^
+||qwpghcqlbstcd.space^
 ||qwsbegovo.top^
 ||qwtag.com^
 ||qwuylnl.com^
 ||qwxfktuzqctax.site^
 ||qwxxufudvlloq.site^
 ||qx4hf6mxe2vcr6tfnfrio557hj7x8x382m.cfd^
+||qxalqljjhzhtv.online^
 ||qxaz2xcw.com^
 ||qxd6.com/js/*.js
 ||qxdownload.com^
@@ -34637,7 +34738,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||r5n8ic3on.com^
 ||r66net.com^
 ||r66net.net^
-||r6883e4wqhecxtjx2u.cfd^
 ||r6q4mtfno.com^
 ||r6yigjfvp.com^
 ||r71y66246rxwozt18u9nvjy6x4blx44v8pbv.cfd^
@@ -34663,7 +34763,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||rabinmakahfoambow.cfd^
 ||rabiousmythify.shop^
 ||raceamen.com^
-||racesmoulderstamp.com^
 ||raceusid.com^
 ||rachesbejeled.cfd^
 ||racingorchestra.com^
@@ -34673,6 +34772,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||raconsdormice.qpon^
 ||racunn.com^
 ||radar.luanapradoadvocacia.com.br^
+||radarconsultation.com^
 ||radexh.icu^
 ||radexports.com^
 ||radiancelongitude.com^
@@ -34772,6 +34872,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||rasantisotypepelanos.cfd^
 ||rashcolonizeexpand.com^
 ||rashlyblowfly.com^
+||rasslesretest.cyou^
 ||ratbitestoory.qpon^
 ||ratedxbiz.com/d/
 ||ratitaemorphin.cfd^
@@ -34898,7 +34999,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||reamedprovend.cfd^
 ||reamusemooleys.com^
 ||reannexinures.qpon^
-||reasonable-satisfaction.pro^
 ||reasonable-source.com^
 ||reatasesetitoefa.com^
 ||reate.info^
@@ -34964,7 +35064,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||redbasketball.com^
 ||redbricksoap.com^
 ||reddit.com/api/request_promo.json
-||redfinsraiment.shop^
 ||redgifs.com/assets/js/goCtrl
 ||rediads.com^
 ||redintelligence.net^$third-party
@@ -35065,7 +35164,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||relapse37.com^
 ||relationrest.com^
 ||relationshipcourseably.com^
-||relativeconductedabundant.com^
 ||relaxafford.com^
 ||relaxtime24.biz^
 ||releasedfinish.com^
@@ -35249,11 +35347,13 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||revenuestripe.com^
 ||revenuevids.com^
 ||reverenceenrapture.com^
+||reverencepolite.com^
 ||reverendfry.com^
 ||reversepatise.cyou^
 ||reverseuntidy.com^
 ||reversible68.com^
 ||reversionprunesterrific.com^
+||revfusion.net^
 ||revimedia.com^
 ||revivalvoice.com^
 ||revive-adserver.net^
@@ -35335,6 +35435,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||rhetoricalloss.com^
 ||rhetoricalveil.com^
 ||rhhwilrxfgsat.website^
+||rhibllcwm.com^
 ||rhinaglauke.cyou^
 ||rhinoaffiliates.com^
 ||rhiolf.cn^
@@ -35453,6 +35554,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||rixengine.com^
 ||rizzomrisible.cyou^
 ||rj544378k3hwihjbz8xllh5o65v6ij.cfd^
+||rjcljqxkdvrmh.site^
 ||rjpvnl.icu^
 ||rjsos.com/channel/laomo_dibu.png
 ||rjsq7ljyp.com^
@@ -35534,6 +35636,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||roagrofoogrobo.com^
 ||roamedtiffie.com^
 ||roamhousing.com^
+||roasteddefraud.shop^
 ||roastengirt.cfd^
 ||roastoup.com^
 ||robberrelative.com^
@@ -35573,7 +35676,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||rodqmeqzjmmko.site^
 ||roemoss.com^
 ||rofnjd.icu^
-||rogffkno.com^
 ||rohsspskkvmzp.space^
 ||roikingdom.com^
 ||roilierastheny.cyou^
@@ -35711,6 +35813,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||rsfeeygucnywb.online^
 ||rsfzjtdmbmxdfq.com^
 ||rsgiafnwpmlffb.com^
+||rsnljydfsxjwt.online^
 ||rsppartners.com^
 ||rss-loader.com/interres/$subdocument,third-party
 ||rst.pornyhd.com^
@@ -35930,7 +36033,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||rubestdealfinder.com^
 ||rubiconproject.com^
 ||rubierchefdom.shop^
-||rublisteapoy.qpon^
 ||rubrafoz.com^
 ||rubricasandfly.qpon^
 ||rubsangust.cfd^
@@ -35985,6 +36087,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||rusenov.com^
 ||rusinsawbill.com^
 ||rusnext.ru/advar.js$script
+||rusoezjtmlqix.site^
 ||russelawn.qpon^
 ||russulamisname.qpon^
 ||rusticfrench.com^
@@ -35997,7 +36100,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ruten.com.tw^*/ahd_
 ||ruthlessdegree.com^
 ||ruthlessmilk.com^
-||rutseasickmunch.com^
 ||rutspartans.com^
 ||ruuaqkw.com^
 ||ruvkztnozrgxm.website^
@@ -36039,6 +36141,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||rwtzv9ehv.com^
 ||rwuccrtjgbwll.site^
 ||rwunweqm.in^
+||rwvrruogiyipt.online^
 ||rx1iwebx2.com^
 ||rxaqwhu54d.com^
 ||rxeosevsso.com^
@@ -36108,7 +36211,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||s.colliderporn.club^
 ||s.commissie.online^
 ||s.crme7srv.com^
-||s.dsabva.com^
 ||s.dsapgq.com^
 ||s.dsdjcu.com^
 ||s.dsdkr4.com^
@@ -36250,6 +36352,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||s8bbs.com/ad/
 ||s8bbs.com/g.php?
 ||s8ey.com^
+||s99s.net^
 ||s9dik0ydj.com^
 ||sa.entireweb.com^
 ||sa.sina.cn^
@@ -36258,7 +36361,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sab.fast.ge/www/*/*.$domain=forum.ge
 ||sab.fast.ge^
 ||sab5a4zz5.com^
-||sabaismuramido.cfd^
 ||sabatonrhamn.qpon^
 ||sabavision.com^$third-party
 ||sabedawiggle.shop^
@@ -36274,7 +36376,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sacdnssedge.com^
 ||sachemfrenalanukit.cyou^
 ||sachemsifint.cfd^
-||sackenprepink.shop^
 ||sacrifystereid.cyou^
 ||sacwumsf.com^
 ||saczrahko.com^
@@ -36297,6 +36398,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||saffronrefuge.com^
 ||sagamenhemic.cyou^
 ||sagcoreedge.com^
+||sageststolas.qpon^
 ||saggarpensum.shop^
 ||saggedwent.cfd^
 ||saggrowledetc.com^
@@ -36376,6 +36478,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sanme2.taisantech.com^
 ||sanoslkut.in^
 ||santogrush.cfd^
+||santonthose.cfd^
 ||sanynouncem.org^
 ||saohu*.com/config/json/cctv.json?
 ||sape.ru^$third-party
@@ -36392,6 +36495,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sarcousaglint.cyou^
 ||sargomiaul.qpon^
 ||sargonould.cyou^
+||sarkinekelter.shop^
 ||sarodsleechy.cfd^
 ||sarodtoluyls.cfd^
 ||sarpohectare.qpon^
@@ -36399,6 +36503,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sas.com^
 ||sasadown.cn/ad/
 ||sasadown.cn/source/plugin/drk_ledadv/
+||sascdn.com/config.js
 ||sascdn.com/diff/$image,script
 ||sascdn.com/tag/
 ||sasinator.realestate.com.au^
@@ -36474,7 +36579,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||scalaminoearful.cyou^
 ||scale.dhonellalojavirtual.com.br^
 ||scalibur.io^
-||scandalcalques.cfd^
 ||scaoeteqn.com^
 ||scarabresearch.com^
 ||scarce-variety.pro^
@@ -36647,6 +36751,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sdefx.cloud/js/acheck.js
 ||sdesabqjjiksj.site^
 ||sdfeiyuejx.com/show/$script
+||sdfpeexfuflgb.site^
 ||sdg.desihamster.pro^
 ||sdhahs.com^
 ||sdhear.com/js/common.js
@@ -36701,7 +36806,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||secancysensualperche.cfd^
 ||seccc.jasjas.xyz^
 ||seceshassurge.qpon^
-||sechw.com^
 ||secondarytower.pro^
 ||secondhandfall.com^
 ||secondly74.com^
@@ -36754,7 +36858,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||seekremote.com^
 ||seekticketunfit.com^
 ||seemingservantreap.com^
-||seenpent.qpon^
 ||seenvault.com^
 ||seepageinlikemetreza.cyou^
 ||seeptoag.net^
@@ -36794,6 +36897,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||semplesapolune.com^
 ||semqraso.net^
 ||semsempeoples.qpon^
+||sencioalibamu.cyou^
 ||sendingcoursecryable.cyou^
 ||sendingspire.com^
 ||sendwebpush.com^$third-party
@@ -37159,6 +37263,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||shieryuefajkix.com^
 ||shigao.icu^
 ||shihuo.cn/alibtn_
+||shiksalogions.cfd^
 ||shili.downxia.com^
 ||shili.wanyx.com^
 ||shilian168.cn^$third-party
@@ -37186,6 +37291,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||shiyifacaisalzc.com^
 ||shiyiyuefalkjui.com^
 ||shoagloumtoamir.net^
+||shoalsbrowed.cfd^
 ||shoalspigginsapocarp.cyou^
 ||shocked-failure.com^
 ||shockedguard.com^
@@ -37245,10 +37351,12 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||shrillspoon.com^
 ||shrjbhtwicmwc.site^
 ||shroffecbdarbha.cyou^
+||shrugaged.com^
 ||shrugverificationauto.com^
 ||shrupsgnarred.com^
 ||shticksyahuna.com^
 ||shtipukdnuusx.site^
+||shtpampersgummers.cfd^
 ||shuakongbao.com/resource/images/banner/
 ||shuanshu.com.com^
 ||shubadubadlskjfkf.com^
@@ -37334,6 +37442,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sillararrand.qpon^
 ||sillinessshoplifting.com^
 ||sillyscrew.com^
+||silver-assets.online^
 ||silvermob.com^
 ||silverwhitebirds.co^
 ||simbaresumeangered.cfd^
@@ -37471,10 +37580,12 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||skadsdk.appsflyer.com^
 ||skadsdk.appsflyersdk.com^
 ||skated.co^
+||skeanejollop.cfd^
 ||skeetads.com^
 ||skeimg.com/i/*.gif
 ||skeinedresiantpumelos.cfd^
 ||sketchdecime.cfd^
+||sketchinferiorunits.com^
 ||sketchpals.com^
 ||skeyword.browser.qq.com/getHotRank
 ||skfteochnscwc.online^
@@ -37522,6 +37633,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sl.al/gdrive/pic/*.gif
 ||slabkenyans.cyou^
 ||slackenkor.cyou^
+||slacklygrewt.shop^
 ||slackpod.com^
 ||slahpxqb6wto.com^
 ||slakedartouhaleday.cyou^
@@ -37669,6 +37781,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||smilingswim.com^
 ||smilingwaves.com^
 ||smithburka.com^
+||smixldswntjcf.site^
 ||smjulynews.com^
 ||smkezc.com^
 ||smkqwa.icu^
@@ -37700,7 +37813,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||snack-media.com^$third-party
 ||snacklink.co/js/web-script.js
 ||snacktoken.com^
-||snaglighter.com^
 ||snailscrambledcontrivance.com^
 ||snailthreatenedinvited.com^
 ||snakemineral.com^
@@ -37737,6 +37849,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||snipersex.com^
 ||snippedpontils.com^
 ||snippedwearers.shop^
+||snippystowstool.com^
 ||snirtappense.cfd^
 ||snivelinginsect.com^
 ||sniveymommet.com^
@@ -37747,11 +37860,13 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||snogmvesrvhjn.site^
 ||snoopundesirable.com^
 ||snoopy-source.pro^
+||snoozeraisleova.qpon^
 ||snoresmile.com^
 ||snortedbingo.com^
 ||snowdayonline.xyz^
 ||snowman77.com^
 ||snowmentor.com^
+||snsdvxsisyfep.space^
 ||snsv.ru^
 ||sntjim.com^
 ||snugglethesheep.com^
@@ -37791,7 +37906,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sochtbisons.shop^
 ||sociable-corner.pro^
 ||socialbars-web1.com^
-||socialmonkee.com/images/
 ||societefetors.qpon^
 ||sociomantic.com^
 ||socket.streamable.com^
@@ -37865,7 +37979,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||solarislabyrinth.com^
 ||soldierreproduceadmiration.com^
 ||soleblinds.com^
-||soleinblayk.cfd^
 ||solengmen.com/assets/publish/$script
 ||solessaynetemallei.cfd^
 ||solicitor44.com^
@@ -38037,7 +38150,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sparkstudios.com^
 ||sparoidgeneal.com^
 ||sparta-tracking.xyz^
-||spartasheafedonker.cfd^
 ||sparteo.com^$third-party
 ||spatlumyawyreputes.cyou^
 ||spatula91.com^
@@ -38072,7 +38184,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||speee-ad.akamaized.net^
 ||speisetao.qpon^
 ||speissmedishcarobs.cfd^
-||spektparoli.cfd^
 ||spellads.com^
 ||spellbind33.com^
 ||spellingdelicatessenremove.com^
@@ -38081,6 +38192,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||spellmist.com^
 ||spellsalsa.com^
 ||spendsdetachment.com^
+||speqephvez.com^
 ||sperans-beactor.com^
 ||speraspace.com^
 ||sperebnf.click^
@@ -38236,6 +38348,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sqiorli2w.com^
 ||sqmn4wncty.com^
 ||sqnffqhbkkqgw.space^
+||sqovyrwommzik.online^
 ||sqsiybcwedqej.space^
 ||squadtee.net^
 ||squalidscrew.com^
@@ -38495,6 +38608,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||static-cn.plista.com^
 ||static-css.pencdn.cz/javascript/www/mafra/*/mafra-pcz-nojq.js$domain=penize.cz
 ||static-fable.online^
+||static-linen.click^
 ||static-rtb2.advantagedsp.com^
 ||static-rtb2.affinity.net^
 ||static-rtb2.branchdsp.io^
@@ -38750,6 +38864,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||storageimagedisplay.com^
 ||store.7box.vip/ad/
 ||store4porn.com^
+||storednoop.qpon^
 ||storiessharifs.cfd^
 ||storkto.com^
 ||storm.mg/ad?
@@ -38874,7 +38989,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||su.bdimg.com/static/dspui/js/
 ||su0k43kcy.com^
 ||suantlysnowk.cfd^
-||suao-defender.pro^
 ||suaswhvq.com^
 ||suayxefo.com^
 ||sub.powerapple.com^
@@ -38884,7 +38998,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||subaoutbear.shop^
 ||subdividecola.com^
 ||subduedetrude.shop^
-||subfaceunchild.qpon^
 ||subgcutler.cfd^
 ||subgumgutwise.com^
 ||subhd.*/kaiyad.
@@ -38896,7 +39009,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||submissionthemecolonialism.com^
 ||submissivejuice.com^
 ||submisslure.qpon^
-||subovaloreman.shop^
 ||subringwarsaws.cyou^
 ||subrootzionist.cfd^
 ||subseaagent.com^
@@ -38916,6 +39028,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||successfuelevents.com^
 ||successfulscent.com^
 ||successionopticalalarm.com^
+||succisehaustliquids.qpon^
 ||succubesalvoed.qpon^
 ||sucddayxlvsza.site^
 ||suchwather.cfd^
@@ -38925,6 +39038,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||sudarypease.cfd^
 ||suddensidewalk.com^
 ||suddensoda.com^
+||suddlelbinit.com^
 ||sudugu.com/config/tj.js
 ||sudugu.com/config/v7.js
 ||sudukrirga.net^
@@ -39098,7 +39212,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||swardsdammit.shop^
 ||swarfamlikar.com^
 ||swarmpush.com^
-||swatad.com^
 ||swatledgesling.com^
 ||swaw.cn^
 ||swayersnonsuitsorosis.qpon^
@@ -39137,6 +39250,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||swoobmoczogq.in^
 ||swoole.com/_images/kundian
 ||swoole.com/_images/w7.jpg
+||swopgruidae.cfd^
 ||swopkodakerrastus.cfd^
 ||swordermislike.qpon^
 ||swordgoose.com^
@@ -39376,6 +39490,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tammagkh.in^
 ||tampedennomic.shop^
 ||tampermonkey.net/s.js
+||tangerskinker.cfd^
 ||tangibleteam.com^
 ||tangierlocoman.com^
 ||tangleproceeding.com^
@@ -39491,6 +39606,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tbimlcvxgraao.website^
 ||tbiwtech.com^
 ||tbpot.com^
+||tbslehgnmaets.space^
 ||tbthrfrgkqltpw.com^
 ||tc.dqpumx.com^
 ||tc.qzwxrtyk.com^
@@ -39588,8 +39704,8 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||teleriumads-*.netdna-ssl.com^
 ||telesipl.shop^
 ||telicbatonga.cyou^
-||tellynativescalumny.com^
 ||telphiruq.com^
+||telsoncirrus.cfd^
 ||telyn610zoanthropy.com^
 ||temayy.com/click/play.js
 ||temksrtd.net^
@@ -39650,6 +39766,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||testedtouch.com^
 ||testingcf.jsdelivr.net/gh/softwaredefinevehicle/static/lozad.min.js
 ||testonslaridunevil.qpon^
+||testudodrivers.cfd^
 ||tetchlemonfingu.qpon^
 ||tetiaetwg.com^
 ||tetricllama.qpon^
@@ -39859,6 +39976,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||thrustssacculi.cyou^
 ||thsbmjrfuqilu.space^
 ||thscore.fun/mn/
+||thtoipuxeyrsv.site^
 ||thubanoa.com^
 ||thujaskoroa.cyou^
 ||thulelendersvougeot.cfd^
@@ -39970,8 +40088,8 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||timluluhaha.com^
 ||timoncommixtlumber.cyou^
 ||timot-cvk.info^
-||tindilater.cyou^
 ||tineinenoltuc.qpon^
+||tineinetarring.qpon^
 ||tineye.com/api/v1/affiliate
 ||tineye.com/api/v1/keyword_search/
 ||ting13.cc/public/tingshu/foor.js
@@ -40007,6 +40125,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tipisoy.shop^
 ||tipsembankment.com^
 ||tipslyrev.com^
+||tiptopboubouslisle.cfd^
 ||tiredamazingly.com^
 ||tiredthroat.com^
 ||tireinside.com^
@@ -40200,6 +40319,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tomansbecramprinted.qpon^
 ||tomatobarrel.com^
 ||tomatoqqamber.click^
+||tombacsmimir.cfd^
 ||tombaksungum.cfd^
 ||tombsspinner.com^
 ||tomefuldunch.cfd^
@@ -40260,9 +40380,11 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tooqtzeiaohn.com^
 ||toothbond.com/js/head.js
 ||toothbond.com/js/top.js
+||tootherungaitemurres.qpon^
 ||toothpick75.com^
 ||tootlarker.com^
 ||toots-a.akamaihd.net/priority/*Sponsor
+||tootsiebedims.qpon^
 ||top-best.com^
 ||top.maccms.*$third-party
 ||top2099.com^
@@ -40291,6 +40413,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||toppedochre.qpon^
 ||topprofitablecpm.com^
 ||topprofitablegate.com^
+||toppyswedge.shop^
 ||topqualitylink.com^
 ||toprevenuecpmnetwork.com^
 ||toprevenuegate.com^
@@ -40306,9 +40429,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||toptrendyinc.com^
 ||torbusenfhwnq.com^
 ||torchfriendlypay.com^
-||torcsdiene.cfd^
 ||torioluor.com^
-||tornoteregga.cfd^
 ||toroadvertising.com^
 ||torpidtongue.com^
 ||torrent-protection.com^
@@ -40741,6 +40862,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||trustedzone.info^
 ||trustgrape.com^
 ||trusting-produce.com^
+||trustkiwi.com/zn/
 ||trustkiwi.com^
 ||trustmaxonline.com^
 ||trustworthyconstant.com^
@@ -40761,7 +40883,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||trw12.com^
 ||try.opera.com^
 ||tryoe.com^$third-party
-||trypahandbowtorpor.cyou^
 ||ts.grmnmwv.cn^
 ||ts.sopornvideos.com^
 ||ts.venum.top^$third-party
@@ -40842,6 +40963,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tu93.org/mobile/w/*.min.js|$script
 ||tubaroncrickle.shop^
 ||tubbeckcreels.qpon^
+||tubbiewhitier.cfd^
 ||tubbynubbled.cyou^
 ||tubbyweird.pro^
 ||tube.hentaistream.com/wp-includes/js/pop4.js
@@ -40887,6 +41009,8 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tumblebit.com^
 ||tumbleicicle.com^
 ||tumblrgallery.xyz/model-live.js
+||tumetaipeicalesa.qpon^
+||tumpspeller.qpon^
 ||tumri.net^
 ||tumuliapodia.cfd^
 ||tundrafolder.com^
@@ -40897,6 +41021,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tungosraftageelk.cyou^
 ||tunisborax.cfd^
 ||tunkajumping.cyou^
+||tunketdocker.qpon^
 ||tunnelstatu.cfd^
 ||tupian888.*.bcebos.com^
 ||tupmsen.com^
@@ -40905,7 +41030,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||turbobit.net/pus/
 ||turboplays.click^
 ||turbostats.xyz^
-||turbotsmovings.cyou^
 ||turboviplay.com/ads_gala.js
 ||turbulent-divide.com^
 ||turcailnt.com^
@@ -40969,7 +41093,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tw6eg2vusa.com^
 ||twa735xojg.com^
 ||twads.gg^
-||twarsirbkkf.com^
 ||twavtv.com/js/jquery.colorbox
 ||twazzyduskenfrowy.qpon^
 ||twblfyfbesmtc.online^
@@ -41077,6 +41200,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tympanibossetdeline.qpon^
 ||tynclqk7xn1fzpzr.rest^
 ||tynt.com^
+||tyouqyiehilym.online^
 ||typepredict.com^
 ||typewebsite.com^
 ||typhooned.com^
@@ -41095,6 +41219,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||tyylnyqyi.com^
 ||tz-68-fabb.com/qiye/
 ||tzaqkp.com^
+||tzarpeltish.qpon^
 ||tzarredbird.shop^
 ||tzegilo.com^
 ||tzfdc.com.cn/userfiles/flash/
@@ -41233,6 +41358,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||udn.com^*/ad/
 ||udnfunlife.com/mall/cus/cat/OutWebAd.do
 ||udnxazqpiyepo.site^
+||udrbgoiyqzii.com^
 ||udsf.cn^
 ||udsxhdtukvz.com^
 ||udtnjdhtdb.com^
@@ -41245,6 +41371,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||uecrkcmmjcayt.online^
 ||uefa.com/imgml/uefacom/sponsors/
 ||uehmzlqrusxlw.online^
+||uej3uflnbqmwhc79h3l2gzt.rest^
 ||uel-uel-fie.com^
 ||uemurnl.com^
 ||uenaxazrhiayj.website^
@@ -41323,6 +41450,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ujfulizhfqtmm.online^
 ||ujfyzxfc01.com^
 ||ujhu.cn^
+||ujj1ndg5i.com^
 ||ujlxkxgfl3.creativelandings.xyz^
 ||ujof.cn^
 ||ujpcgbe9.xyz^
@@ -41371,6 +41499,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||uluuermktsbvb.online^
 ||ulwzinqlh0.com^
 ||ulx1cpf68.com^
+||ulysqoaqwz.com^
 ||ulywbvwxyyiol.space^
 ||um5xcgngmart.xyz^
 ||umami.pcmzxs.top^
@@ -41393,6 +41522,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ummsyogyankeg.website^
 ||umommy.cyou^
 ||umphek.com^
+||umptydaudit.cyou^
 ||umqigvethe.com^
 ||umsetsummon.com^
 ||umssvcwqpokjt.online^
@@ -41489,6 +41619,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ungrandswopped.cyou^
 ||unhandskatinka.cyou^
 ||unhappyweakness.com^
+||unhastyshote.shop^
 ||unholdgink.qpon^
 ||unhonedbarbels.shop^
 ||unhonedpeinedconteck.qpon^
@@ -41520,7 +41651,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||universalsrc.com^
 ||universe4innovations.com^
 ||universe7.top^
-||universitycleaninglunch.com^
 ||universityroadsidecircumstantial.com^
 ||universityshocksooner.com^
 ||uniway.cn.com^
@@ -41551,6 +41681,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||unm.zzxmcp.com^$third-party
 ||unmectappic.com^
 ||unmiredaahreclang.cyou^
+||unmitreoutlast.cfd^
 ||unnaturalcontradictblossom.com^
 ||unnearorpheus.cyou^
 ||unoadsrv.com^
@@ -41565,7 +41696,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||unpkg.com/videojs-vast-vpaid$domain=video.q34r.org|porntoday.ws|netuplayer.top|netu.ac|speedporn.net|meucdn.vip|yandexcdn.com|waaw1.tv|waaw.*|hqq.*|peliculas8k.com|gledajvideo.top|1069jp.com|diziturk.club|younetu.org|vzlinks.com|fsohd.pro|cinecalidad.vip|vapley.top|player.streaming-integrale.com|xtapes.to|player.igay69.com|troncha.lol|vpge.link|opuxa.lat|filmcdn.top|stbpnetu.xyz|pokemonlaserielatino.xyz|gayvidsclub.com|zarato.top|videocdnal24.xyz|play.seriesgod.com|xstream.top|latlat.xyz
 ||unpkg.com/videojs-vast-vpaid@
 ||unpleasantchampionship.pro^
-||unpoiseshoves.shop^
 ||unpw0czu7.com^
 ||unqtchbjwhgrg.space^
 ||unqvaof.xyz^
@@ -41584,6 +41714,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||unsettledradiator.com^
 ||unseweduppuff.cfd^
 ||unshapeclaval.qpon^
+||unshowyclyssus.com^
 ||unshutcaitiff.com^
 ||unsightlyaffect.pro^
 ||unslingrancors.shop^
@@ -41630,6 +41761,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||uooyoo.com/hz/*str.js
 ||uosvpkrplvxlr.online^
 ||uowgxktrrenny.site^
+||uoydzaom.xyz^
 ||up.ousabq.tech^
 ||up.tbllem.com^
 ||upahkyuklnigb.com^
@@ -41676,10 +41808,10 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||uploadgig.com/static_/$domain=3xpla.net|3xplanet.net
 ||uploadgig.com/static_/$third-party
 ||uploadhouse.com^*.gif$domain=wishct.com
+||upodaitie.net^
 ||uponomanytetor.com^
 ||uppiledbotocimum.qpon^
 ||uppitytime.com^
-||upqkyiklbo.com^
 ||uprimp.com^
 ||uprisegriddleharico.cfd^
 ||uprivaladserver.net^
@@ -41768,6 +41900,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||usheebainaut.com^
 ||usingageghoaft.net^
 ||usjbwvtqwv.com^
+||uskdkvjda.com^
 ||uskokvolutin.com^
 ||uslvcdvvgarjy.online^
 ||usoxsak.icu^
@@ -41804,6 +41937,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||uttbtgsqxi.com^
 ||utubepwhml.com^
 ||uturiw.icu^
+||utxptgyqxnjff.online^
 ||utzacheiye.com^
 ||uu1.3gu.com^
 ||uu11001.com^
@@ -41949,7 +42083,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||valleyarmiessunflower.com^
 ||valoplant.gg/other/bet_gg_ad.html
 ||valuable-noise.pro^
-||valuabledesigner.pro^
 ||valuad.cloud^
 ||valuebuttons.com^
 ||valueclick.cc^
@@ -41962,6 +42095,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||valvyre.com^
 ||vamosesagonic.com^
 ||vampyrejibmen.com^
+||vanessabroo.cyou^
 ||vanfireworks.com^
 ||vanishmemory.com^
 ||vanpeople.com/gg/
@@ -41976,7 +42110,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||vapidnou.qpon^
 ||vaquerodoe.shop^
 ||varecdeplace.shop^
-||vares.top/js/profiton-auto_adblock*.js
 ||variablesthirdtransparent.com^
 ||variationconfused.com^
 ||varietyofdisplayformats.com^
@@ -42005,6 +42138,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||vaultwrite.com^
 ||vauu8z77p.com^
 ||vauxitemedusae.cyou^
+||vavpinning.qpon^
 ||vax-now.com^
 ||vazhno.ru/cdn-cgi/apps/head/*.js
 ||vazypteke.pro^
@@ -42026,7 +42160,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||vbnmsilenitmanby.info^
 ||vbnritbsiqqar.online^
 ||vbtrax.com^
-||vbudetbyofg.com^
 ||vbunpfvdn.com^
 ||vbuozxgkfajcr.space^
 ||vbw3q6jxn.com^
@@ -42110,10 +42243,12 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||verdantloom.com^
 ||verdantsculpture.com^
 ||verdugoyetzer.cfd^
+||vergebelard.qpon^
 ||verifiedarts.com^
 ||vernaellac.com^
 ||veronicamagazine.nl/srv/*/banner
 ||verooperofthewo.com^
+||verpabegloom.shop^
 ||verseballs.com^
 ||versuswall.com^
 ||verticallysaturate.com^
@@ -42373,6 +42508,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||visiblegains.com^
 ||visiblejoseph.com^
 ||visiblemeasures.com^
+||visiertripods.qpon^
 ||visionporal.shop^
 ||visit-japan.jp/parts/visitjapan_f35_170_170.jpg
 ||visit-website.com^
@@ -42481,6 +42617,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||vnet.cn^*.html
 ||vnet.cn^*.html?$third-party
 ||vniddlg.xyz^
+||vnjazjelnhbjq.online^
 ||vnlozunyvl.com^
 ||vnmgexvzxgcsw.site^
 ||vns86.oss-*.aliyuncs.com^
@@ -42528,7 +42665,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||vorsprung-online.de/images/images/*/Werbung/bannermobilwerbung.jpg
 ||vorucompmb9e3z4v7fihg.rest^
 ||voruftuiov.com^
-||voteenelle.cfd^
 ||vowellm4.com^
 ||vowsavageskim.com^
 ||voxar.xyz^
@@ -42563,6 +42699,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||vqdxejiolkutu.website^
 ||vqia.cn^
 ||vqjxckklhqfjv.website^
+||vqtxrzvzmfedk.website^
 ||vrabeggfdjcsww.com^
 ||vrcyxqjipj.com^
 ||vrilleburgess.cyou^
@@ -42682,12 +42819,14 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||vxinzheng.xyz^$third-party
 ||vxotu.com/i/*.gif
 ||vxrdwo.cn^
+||vxroxfcel.com^
 ||vxssaouirigkr.online^
 ||vxwpzwunnytnb.space^
 ||vxydbok.com^
 ||vxyqwespdaadz.site^
 ||vy9fwpl1.xyz^
 ||vyadfnsptcdbw.online^
+||vyazxenixrfog.space^
 ||vyczp.cn^
 ||vyjsbprcljavve.com^
 ||vyqn.cn^
@@ -42713,7 +42852,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||vzofbsmlnuumm.space^
 ||vzorzilmf.com^
 ||vzrhwmsj.icu^
-||vzxanjusfczgl.site^
 ||vzxdzrbzeesko.site^
 ||w.4kporn.xxx^
 ||w.love4porn.com^
@@ -42785,7 +42923,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||wacogzaeip.com^
 ||wacoloxodonstrop.qpon^
 ||wacowla.com/wp-content/plugins/popover/js/
-||wactzluhhgzdz.com^
 ||waegstalled.shop^
 ||waescyne.com^
 ||waeshana.com^
@@ -42810,7 +42947,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||waioidmwg.com^
 ||waipian*.com/statics/recommend/
 ||wairsbruxism.qpon^
-||wairsresold.cyou^
 ||waisheph.com^
 ||waistcoataskeddone.com^
 ||waitheja.net^
@@ -42913,7 +43049,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||waterloggedkind.com^
 ||waterproofgranitegag.com^
 ||watersensible.com^
-||watery-concert.pro^
 ||wateryeffective.pro^
 ||wateryvan.com^
 ||waterywave.com^
@@ -42953,6 +43088,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||wbidder3.com^
 ||wbidder311072023.com^
 ||wbidder4.com^
+||wbidr.com^
 ||wbilvnmool.com^
 ||wbkar038r.com^
 ||wbmbr16tt.com^
@@ -42960,7 +43096,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||wboux.com^
 ||wbqqo.com^$third-party
 ||wbraekvint.com^
-||wbsleixbsbbrf.space^
 ||wbvxljdkzkfcm.online^
 ||wbxyusccfitux.site^
 ||wc6y3nrv7g.com^
@@ -43072,7 +43207,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||wecouldle.com^
 ||wecvhi.ekftei2weudt.info^
 ||wedauspicy.com^
-||wedgingfilaria.qpon^
 ||weeawesome.com^
 ||weebcentral.com/static/henry_ads/
 ||weedaivr.cfd^
@@ -43398,7 +43532,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||wirthycgltinq.site^
 ||wirypaste.com^
 ||wirytrip.com^
-||wirzurwhiah.in^
 ||wisedotcom.com^
 ||wisherblower.com^
 ||wishesarrace.cfd^
@@ -43443,7 +43576,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||wkokekavrozln.site^
 ||wkptbgyqbmrpk.online^
 ||wkrlkvcgwrocd.space^
-||wksfhfswxamwjq.com^
 ||wkvcxwnl.com^
 ||wkzivgbgob.com^
 ||wkzvf2658.com^
@@ -43501,7 +43633,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||wnardmwt.com^
 ||wnbeuabtgorcd.space^
 ||wneia.iaskhot.com^
-||wneprfkzrpnfs.space^
 ||wnhdrgxqh.com^
 ||wnimg1.ru/data/game/*/*-*x*.gif
 ||wnizjdggtn.com^
@@ -43537,6 +43668,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||woldesgummy.shop^
 ||wolf-327b.com^
 ||wolsretet.net^
+||wolterwampus.cfd^
 ||wolve.pro^
 ||wolvesexambein.cyou^
 ||womangathering.com^
@@ -43965,7 +44097,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||xc5r5huxrr.com^
 ||xcafe.com/*.php
 ||xcafe.com/assets/script.js
-||xcafe.com/b/
 ||xcar.com.cn/dsp/ad
 ||xcdfoveggqqlw.website^
 ||xcdn.vip^$third-party
@@ -44044,7 +44175,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||xegnfwkju.com^
 ||xejaxlfypblfvg.com^
 ||xekrbwex7d.com^
-||xenialdisco.qpon^
 ||xeniasvogues.cyou^
 ||xenlzn.icu^
 ||xenonhieder.cfd^
@@ -44082,6 +44212,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||xgsvpsz7f4.com^
 ||xgucecrzitckb.space^
 ||xgupczseyx.com^
+||xgx.mobi/go/
 ||xgyrwzuqjblux.website^
 ||xgzxpdy.com^
 ||xh04i9ine.com^
@@ -44250,6 +44381,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||xlanhtyyexjqb.space^
 ||xleemek84.com^
 ||xlekg58lub.com^
+||xlgqoxvlwajus.site^
 ||xliirdr.com^
 ||xlirdr.com^
 ||xlivrdr.com^
@@ -44480,6 +44612,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||xmlgrab.com^
 ||xmlking.com^
 ||xmlkjhiamrcbh.online^
+||xmllover.com^
 ||xmlppc.net^
 ||xmlppcbuzz.com^
 ||xmlrtb.com^
@@ -44603,7 +44736,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||xsepmeerroahk.website^
 ||xsiavruqlwsdi.website^
 ||xslca.cc/js/pf.js
-||xsmnkwolsmvjim.com^
 ||xspxdhkcaplhza.com^
 ||xsqltdwuccamf.space^
 ||xsqsskomtwkmw.space^
@@ -44633,6 +44765,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||xtroglobal.com^
 ||xttkqfyditmqk.site^
 ||xtxbemp.xyz^
+||xtxp91c4vuic133okcj.cfd^
 ||xtxytmqzywwfj.space^
 ||xtzospfaecgup.site^
 ||xu919zz2i.com^
@@ -44684,7 +44817,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||xwikmfiuotauw.website^
 ||xwkepddq.com^
 ||xwlketvkzf.com^
-||xwnfmfvkxzbti.site^
 ||xwqvytuiko.com^
 ||xwtxqjtsrxoop.website^
 ||xwvtqtsrlgedu.space^
@@ -44852,13 +44984,14 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||yanwz3t0pi.com^
 ||yaojingweiba.com/inc/
 ||yaokanwx.com/tongji/
+||yaovxuizanimz.site^
 ||yaoyl.com/js/ds.js
 ||yapabbreviate.com^
 ||yapfairmark.com^
 ||yapmanrehears.cyou^
+||yappingptoses.cyou^
 ||yapthsxetvebmx.com^
 ||yarcokme.com^
-||yardarmcosigns.cfd^
 ||yaseok.com//static/src/images/loading.gif
 ||yaseok.com/uploads/20*.gif
 ||yashi.com^
@@ -44880,6 +45013,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ybpsbgywgazfe.com^
 ||ybs2ffs7v.com^
 ||ybssrsbdcgzrr.online^
+||ybtdxfqdnwzly.space^
 ||ybubpabpuznqp.space^
 ||ybuneloeh.com^
 ||ybwdy.com/static/js/0614.js
@@ -44892,7 +45026,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ycglik.icu^
 ||ych.asia^
 ||ycikokryl.com^
-||yctoppmxmw.com^
 ||ycwnxqwujfjxp.site^
 ||ycwsiwxfokyhn.site^
 ||ycyxddmy.com^
@@ -44902,11 +45035,13 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ydhilninhp.com^
 ||ydholdred.com^
 ||ydjrmrsvrhkrb.site^
+||ydobocbzftzhr.website^
 ||ydqajoosclord.site^
 ||ydsdmtyuyyzsa.website^
 ||ydslatvia.shop^
 ||ydss.cn/test.www.jdpay.com
 ||ydstatic.com/dsp_website/
+||ydumbmojdhz.com^
 ||ydvgendsomrzg.website^
 ||ydwekhadydlnz.space^
 ||ydwpiomnomypc.website^
@@ -44990,7 +45125,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||yggykj.*/js/foot.js
 ||yggykj.*/js/head.js
 ||yghonola.com^
-||ygjgemkoeoafk.site^
 ||ygx2myq993.com^
 ||yh823ogu6b.com^
 ||yhbcii.com^
@@ -45122,6 +45256,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||ymapiatm.xyz^
 ||ymdxl.com^
 ||ymgbwkw.icu^
+||ymgmmlqakrllc.space^
 ||ymicwnvwtbfvb.online^
 ||ymjxkjomtewad.website^
 ||ymmegy.icu^
@@ -45254,7 +45389,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||yp43k2ecmiill2bbhw12kh.rest^
 ||yp868.com/js/54h/
 ||ypfrqqgjhaxqk.space^
-||ypfvnklst.com^
 ||ypirlqn.icu^
 ||ypswhvpqmfqtp.website^
 ||yptqys.tianqistatic.com^
@@ -45322,7 +45456,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||yubfw6wycqq4yy1nqg1yxqhr2o8w.rest^
 ||yucalarvate.qpon^
 ||yudutkbdnbdag.website^
-||yuegypcw.com^
 ||yueipaoo.xyz^*.gif
 ||yuftyutu.shop^
 ||yugasmiconia.shop^
@@ -45370,6 +45503,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||yuwangshe.net/astyle/wap.
 ||yuwenbin.host^
 ||yuwseujcjavak.space^
+||yuyykdjtkdpat.store^
 ||yuztrvzsjtfgo.space^
 ||yvczmaqsiywheh.com^
 ||yvdb.cn^
@@ -45434,6 +45568,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||yyjvimo.com^
 ||yylady.cn^
 ||yymowvdy0.com^
+||yymupayhgc.com^
 ||yyqozaldwa.com^
 ||yyrodzxm5.com^
 ||yyutfzv.com^
@@ -45501,6 +45636,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||zaf.api.fanbyte.com/stable/js/wowhead.js
 ||zaffircream.shop^
 ||zaffresvo.shop^
+||zagvee.com^
 ||zaimads.com^
 ||zaiteegraity.net^
 ||zalo-ads-240-td.zadn.vn^
@@ -45570,6 +45706,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||zceniddd.com^
 ||zcexuriph.com^
 ||zcfhi.cn.com^
+||zcfkamumyzzle.online^
 ||zcgwaeppvqdbm.space^
 ||zcok7117voqo35mz4yffzu72ji.cfd^
 ||zcrlnkhvomiyd.website^
@@ -45671,7 +45808,6 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||zferral.com^
 ||zfpn7ef472.com^
 ||zfru.cn^
-||zfurfq.com^
 ||zg.mmyuer.com^
 ||zgb6rg0r3h.com^
 ||zgcuq93h5s.com^
@@ -45742,6 +45878,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||zhydvuknldolm.website^
 ||zhzyw.com/js/InsertJS.js
 ||zi8ivy4b0c7l.com^
+||ziaapdlsrpl.com^
 ||ziajretrs.com^
 ||ziametbaff.com^
 ||ziblo.cloud^
@@ -45870,6 +46007,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||zn46.com/images/*0x
 ||zngvqwp.icu^
 ||znlv8bl1je21ibnhrtpjnrt.rest^
+||znpjgfowkfgen.site^
 ||znszuawsteibx.website^
 ||znutlgbuoivtq.site^
 ||znxshdhiswvyl.site^
@@ -45932,20 +46070,25 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||zqcizuncfuob.com^
 ||zqmhl8lgj.com^
 ||zqqwr9snx1.com^
+||zqtpmnxctgyqh.space^
 ||zqvkipfkxjigc.com^
 ||zqy0jcfipu.com^
 ||zqzgmsuotwkrs.online^
+||zqzwktfvahzno.space^
 ||zrblog.net*/gg/
 ||zrblog.net/zanzhu/virpus.gif
 ||zrcdywgbg.com^
 ||zrfolzgstvgp.com^
+||zrimyxvxbn.com^
 ||zrjr81na94.com^
 ||zrkeirapi.com^
 ||zrlqm.com^
 ||zrmtrm.com^
 ||zrosq6dsha.com^
 ||zrouaxrohyvha.online^
+||zrprwnsmi.com^
 ||zrvjzhcexv.com^
+||zrwmausnhmxkq.space^
 ||zrwxvesqlyjml.website^
 ||zrygvvxyadvro.site^
 ||zryydi.com^
@@ -46018,6 +46161,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||zuqltpaydnomz.website^
 ||zurichfewness.shop^
 ||zuujydolvhkzi.site^
+||zuznvlaqsshto.space^
 ||zuzrwanpi.in^
 ||zv.7vid.net^
 ||zvciaoan1k.com^
@@ -46043,6 +46187,7 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||zwqppnlyspiau.site^
 ||zwqzxh.com^
 ||zwrwwhquflcwe.space^
+||zwuesdewosddn.site^
 ||zwvq.cn^
 ||zwxtfp.icu^
 ||zx.docin.com^
@@ -46053,8 +46198,8 @@ zhaotianbao1.cn/*/ywy*.apk$~third-party
 ||zxiws.cn^
 ||zxjmtfktbjgvk.website^
 ||zxlxqzn46yzbn8qxr69.rest^
+||zxnsukgybbfkmz.com^
 ||zxphiz.tech^
-||zxpvebhtojfvgu.com^
 ||zxsvveyeixhmm.space^
 ||zxvklz.icu^
 ||zxw51.com^$third-party
